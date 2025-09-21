@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["tarot_reader"]
+
+[project]
+name = "tarot-reader"
+version = "0.1.0"
+description = "A lightweight tarot reading package that doubles as a powerful random content generator with personal seed support"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Tarot Reader", email = "contact@example.com"}
+]
+keywords = ["tarot", "cards", "random", "generator", "llm", "content", "seed", "entertainment"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/tarot-reader"
+"Bug Reports" = "https://github.com/yourusername/tarot-reader/issues"
+Source = "https://github.com/yourusername/tarot-reader"
