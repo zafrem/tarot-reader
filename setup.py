@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="tarot-reader",
-    version="0.1.0",
+    version="0.0.1",
     author="Tarot Reader",
     author_email="contact@example.com",
     description="A lightweight tarot reading package that doubles as a powerful random content generator with personal seed support",
