@@ -1,0 +1,72 @@
+name: Build & Publish to (Test)PyPI
+
+on:
+  push:
+    tags:
+      - "v*.*.*-rc*"   # ex) v0.1.0-rc1 → TestPyPI
+  release:
+    types: [published]  # GitHub Release 발행 → PyPI
+  workflow_call:
+    inputs:
+      environment:
+        description: 'Target environment (testpypi or pypi)'
+        required: true
+        type: string
+
+jobs:
+  # Call the CI workflow to ensure all checks pass
+  ci:
+    uses: ./.github/workflows/ci.yml
+    
+  # Use the build artifacts from CI workflow
+  get-build-artifacts:
+    runs-on: ubuntu-latest
+    needs: ci
+    steps:
+      - name: Download build artifacts from CI
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      
+      - name: Re-upload artifacts for publish jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: publish-dist
+          path: dist/
+
+  publish-testpypi:
+    needs: get-build-artifacts
+    if: startsWith(github.ref, 'refs/tags/') && contains(github.ref, '-rc')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: 
+          name: publish-dist
+          path: dist
+      - name: Publish to TestPyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        run: |
+          python -m pip install --upgrade pip
+          pip install twine
+          twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+  publish-pypi:
+    needs: get-build-artifacts
+    if: github.event_name == 'release'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: 
+          name: publish-dist
+          path: dist
+      - name: Publish to PyPI
+        env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        run: |
+          python -m pip install --upgrade pip
+          pip install twine
+          twine upload dist/*
