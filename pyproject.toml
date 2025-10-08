@@ -36,6 +36,9 @@ Homepage = "https://github.com/zafrem/tarot-reader"
 "Bug Reports" = "https://github.com/zafrem/tarot-reader/issues"
 Source = "https://github.com/zafrem/tarot-reader"
 
+[project.scripts]
+tarot-reader = "tarot_reader.__main__:main"
+
 [project.optional-dependencies]
 dev = [
     "ruff>=0.1.0",
