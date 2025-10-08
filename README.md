@@ -1,10 +1,10 @@
 # tarot-reader
 
-A lightweight, text-based tarot reading package for Python that doubles as a powerful random content generator.
+A lightweight, text-based tarot reading package for Python with beautiful terminal display.
 
 ## Overview
 
-**Dual Purpose Package:** Use it for tarot readings OR as a sophisticated random function generator for any application. Perfect for LLM integration, content generation, and personalized randomness.
+A pure tarot reading package with randomized results and optional personal seeding for consistent readings.
 
 **For entertainment purposes only.** This package provides a fun, text-only tarot reading experience that can be integrated into apps, chatbots, or used in the terminal.
 
@@ -13,16 +13,15 @@ A lightweight, text-based tarot reading package for Python that doubles as a pow
 ### 🔮 Tarot Reading Features
 - Complete tarot deck (78 cards) with upright and reversed meanings
 - Multiple spreads: Single card, 3-Card (Past/Present/Future), Celtic Cross (10-card)
-- Personal seed system for consistent, personalized readings
-- Dual output formats: LLM-optimized text and beautiful CUI display
+- Personal seed system with time component for truly random readings
+- Beautiful terminal display with emojis and formatting
 
-### 🎲 Random Function Features
+### 🎲 Randomness Features
 - **156 unique outcomes** (78 cards × 2 orientations) with meaningful content
-- **Seeded randomness** - same input always gives same result
-- **Pure randomness** - different result every time when no seed provided
-- **Scalable output** - generate 1 to 78 random items in single call
-- **Rich content** - each result includes names, states, and detailed meanings
-- **LLM-ready text** - clean, structured output perfect for AI processing
+- **Time-influenced randomness** - different results each reading, even with same personal info
+- **Personal context** - incorporate personal information while maintaining randomness
+- **Scalable output** - generate 1 to 78 random cards in single call
+- **Rich content** - each result includes names, orientations, and detailed meanings
 
 ## Installation
 
@@ -53,157 +52,93 @@ for position, card in reading.items():
     print(f"{position}: {card['name']} - {card['meaning']}")
 ```
 
-#### Personal Seed System (Consistent Results)
+#### Personal Context (Time-Influenced Randomness)
 ```python
-# Same personal info = same reading every time
+# Personal info influences but doesn't determine results
 personal_info = "INFP seeking career guidance"
 
 card1 = draw_single(personal_info)
-card2 = draw_single(personal_info)  # Always same as card1
+card2 = draw_single(personal_info)  # Different from card1 due to time component
 
 # Different personal info = different results
 reading_a = draw_three("ENFJ + A+ blood type")
 reading_b = draw_three("ISTJ + relationship questions")
 ```
 
-### 🎲 Random Function Usage
-
-#### Pure Random Content Generation
+#### Terminal Display
 ```python
 from tarot_reader import get_single_card_text, get_random_cards_text
 
-# Random inspirational content
-inspiration = get_single_card_text("llm")
-# Returns: "Strength - Courage, persuasion, influence, compassion"
+# Beautiful terminal display
+card_display = get_single_card_text()
+# Returns: "🎴 Strength\n   ↳ Courage, persuasion, influence, compassion"
 
-# Multiple random elements
-story_elements = get_random_cards_text(5, "llm")
-# Returns: "1. The Fool - New beginnings\n2. Seven of Cups - Opportunities..."
+# Multiple cards with formatting
+cards_display = get_random_cards_text(3)
+# Returns formatted multi-card display with headers and numbering
 
-# Extract just the meanings for random quotes
+# Extract just the meanings for simple use
 card = draw_single()
-random_quote = card['meaning']
+meaning = card['meaning']
 # Returns: "New beginnings, innocence, spontaneity, free spirit"
 ```
 
-#### Seeded Random (Consistent Results)
+#### Reading Applications
 ```python
-# Perfect for user-specific daily content
-def daily_content(user_id, date):
-    seed = f"{user_id}_{date}"
-    return get_single_card_text("llm", seed)
+# Daily guidance with personal context
+def daily_guidance(user_info):
+    return get_single_card_text(user_info)
 
-# Same user + same date = same content
-content1 = daily_content("user123", "2025-01-15")
-content2 = daily_content("user123", "2025-01-15")  # Same as content1
-content3 = daily_content("user123", "2025-01-16")  # Different content
+# Themed readings
+def themed_reading(theme, num_cards=3):
+    return get_random_cards_text(num_cards, theme)
 
-# Random decision maker with consistency
+# Simple decision helper
 def get_guidance(question):
-    return get_single_card_text("llm", question)
-
-advice = get_guidance("should I change jobs")  # Consistent for same question
-```
-
-#### Random Content for Applications
-```python
-# Story/game content generator
-def generate_character_traits(num_traits=3):
-    cards = get_random_cards_text(num_traits, "llm")
-    traits = []
-    for line in cards.split('\n'):
-        trait = line.split(' - ')[1] if ' - ' in line else line
-        traits.append(trait)
-    return traits
-
-# Random mood/theme generator
-def daily_theme():
-    card = draw_single()
-    return {
-        'theme': card['name'],
-        'mood': card['orientation'],  # 'Upright' or 'Reversed'
-        'description': card['meaning']
-    }
-
-# True/False random with meaning
-def random_decision_with_context(question):
     card = draw_single(question)
     return {
-        'decision': card['orientation'] == 'Upright',  # True/False
-        'reasoning': card['meaning'],
-        'context': card['name']
+        'card': card['name'],
+        'orientation': card['orientation'],
+        'guidance': card['meaning']
     }
 ```
 
 ## Advanced Features
 
-### Dual Format System (LLM + CUI)
+### Complete Reading Summaries
 
-All functions support two output formats:
-
-```python
-from tarot_reader import get_single_card_text, get_reading_summary
-
-# LLM Format - Clean text for AI processing
-llm_text = get_single_card_text("llm")
-# Returns: "The Fool (Reversed) - Recklessness, lack of direction"
-
-# CUI Format - Beautiful terminal display
-cui_text = get_single_card_text("cui")
-# Returns: "🎴 The Fool (Reversed)\n   ↳ Recklessness, lack of direction"
-
-# Complete readings with context
-llm_reading = get_reading_summary("three", "llm", "INFP career guidance")
-cui_reading = get_reading_summary("three", "cui", "INFP career guidance")
-```
-
-### LLM Integration Examples
+Get full reading experiences with context and beautiful formatting:
 
 ```python
-from tarot_reader import get_reading_summary, get_random_cards_text
+from tarot_reader import get_reading_summary
 
-# Perfect for sending to ChatGPT, Claude, etc.
-def generate_story_with_ai(theme):
-    # Get tarot-based story elements
-    elements = get_random_cards_text(3, "llm", theme)
+# Single card with decorative header
+daily_reading = get_reading_summary("single", "INFP career guidance")
+# Returns: Full formatted reading with header, card, and interpretation
 
-    # Send to your LLM
-    prompt = f"Create a story using these elements:\n{elements}"
-    # return openai.chat.completions.create(messages=[{"role": "user", "content": prompt}])
+# Three-card spread with guidance
+three_card = get_reading_summary("three", "seeking relationship advice")
+# Returns: Past/Present/Future spread with context
 
-# Personal daily content for users
-def personal_daily_insight(user_id, mbti_type):
-    seed = f"{user_id}_{mbti_type}"
-    reading = get_reading_summary("single", "llm", seed)
-
-    # Process with LLM for personalized interpretation
-    prompt = f"Interpret this tarot reading for someone with {mbti_type} personality:\n{reading}"
-    # return your_llm_api(prompt)
-
-# Consistent random content for applications
-def app_feature_randomizer(feature_name, date):
-    seed = f"{feature_name}_{date}"
-    content = get_random_cards_text(1, "llm", seed)
-    return content.split(" - ")[1]  # Just the meaning part
+# Celtic Cross for deep insight
+celtic = get_reading_summary("celtic", "major life decision")
+# Returns: Full 10-card spread with position explanations
 ```
 
-### Personal Seed Examples
+### Personal Context Examples
 
 ```python
 # MBTI Personality Types
-reading = get_reading_summary("three", "llm", "ENFJ")
-
-# Blood Types
-daily_card = get_single_card_text("llm", "A+ blood type")
+reading = get_reading_summary("three", "ENFJ")
 
 # Personal Questions/Reasons
-guidance = get_reading_summary("single", "cui", "seeking love guidance")
+guidance = get_reading_summary("single", "seeking love guidance")
 
 # Combined Personal Information
-complex_reading = get_reading_summary("celtic", "llm", "INFP + O+ blood + career change 2025")
+complex_reading = get_reading_summary("celtic", "INFP + career change 2025")
 
-# Any text works as a seed
-user_reading = get_reading_summary("three", "cui", "username123_today")
+# Themed readings
+themed = get_reading_summary("single", "morning meditation")
 ```
 
 ## Use Cases
@@ -211,25 +146,18 @@ user_reading = get_reading_summary("three", "cui", "username123_today")
 ### 🔮 Tarot Applications
 - Personal tarot reading apps
 - Daily card/guidance features
-- Chatbot integration for entertainment
+- Terminal-based tarot readers
 - Meditation and mindfulness apps
 - Fortune telling websites
+- Personal guidance tools
 
-### 🎲 Random Content Generation
+### 🎲 Content Generation
 - **Story/Game Development**: Generate character traits, plot elements, themes
-- **Daily Content Apps**: Consistent daily quotes, moods, themes per user
+- **Daily Content Apps**: Time-influenced daily quotes, moods, themes
 - **Decision Making Tools**: Random guidance with meaningful context
 - **Creative Writing**: Inspiration prompts and story seeds
-- **Social Apps**: Personalized daily content based on user profiles
 - **Educational Tools**: Random discussion topics, icebreakers
-- **Marketing**: Consistent brand messaging with personal touch
-
-### 🤖 LLM & AI Integration
-- Feed structured random content to AI models
-- Generate prompts for creative AI applications
-- Provide consistent seeds for reproducible AI outputs
-- Create personalized AI interactions based on user data
-- Augment chatbots with meaningful random responses
+- **Personal Tools**: Themed guidance and reflection prompts
 
 ## API Reference
 
@@ -241,18 +169,19 @@ draw_three(personal_seed=None) -> Dict
 celtic_cross(personal_seed=None) -> Dict
 
 # Text formatter functions
-get_single_card_text(format_type="llm", personal_seed=None) -> str
-get_three_card_text(format_type="llm", personal_seed=None) -> str
-get_celtic_cross_text(format_type="llm", personal_seed=None) -> str
-get_random_cards_text(num_cards, format_type="llm", personal_seed=None) -> str
-get_reading_summary(reading_type="single", format_type="llm", personal_seed=None) -> str
+get_single_card_text(personal_seed=None) -> str
+get_three_card_text(personal_seed=None) -> str
+get_celtic_cross_text(personal_seed=None) -> str
+get_random_cards_text(num_cards, personal_seed=None) -> str
+get_reading_summary(reading_type="single", personal_seed=None) -> str
 ```
 
 **Parameters:**
-- `personal_seed`: Any string for consistent results (MBTI, blood type, questions, etc.)
-- `format_type`: "llm" for clean text, "cui" for rich terminal display
+- `personal_seed`: Any string for personal context (MBTI, questions, themes, etc.)
 - `reading_type`: "single", "three", "celtic", or number as string
 - `num_cards`: Integer 1-78 for random card draws
+
+**Note:** All functions now include time-based randomness, so identical inputs will produce different results each time.
 
 ## Requirements
 
