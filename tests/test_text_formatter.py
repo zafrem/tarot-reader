@@ -8,7 +8,7 @@ from tarot_reader.text_formatter import (
     get_three_card_text,
     get_celtic_cross_text,
     get_random_cards_text,
-    get_reading_summary
+    get_reading_summary,
 )
 
 

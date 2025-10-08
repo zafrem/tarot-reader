@@ -16,7 +16,9 @@ def _format_card_for_display(card):
     Returns:
         Formatted string for the card
     """
-    orientation_text = f" ({card['orientation']})" if card['orientation'] == 'Reversed' else ""
+    orientation_text = (
+        f" ({card['orientation']})" if card["orientation"] == "Reversed" else ""
+    )
     return f"🎴 {card['name']}{orientation_text}\n   ↳ {card['meaning']}"
 
 

@@ -49,7 +49,7 @@ class TestCore(unittest.TestCase):
             "Your Approach",
             "External Influences",
             "Hopes and Fears",
-            "Final Outcome"
+            "Final Outcome",
         ]
 
         self.assertEqual(set(reading.keys()), set(expected_positions))
@@ -98,8 +98,8 @@ class TestCore(unittest.TestCase):
         card_names = [card["name"] for card in reading.values()]
         self.assertEqual(len(card_names), len(set(card_names)))
 
-    @patch('random.choice')
-    @patch('random.shuffle')
+    @patch("random.choice")
+    @patch("random.shuffle")
     def test_orientation_randomness(self, mock_shuffle, mock_choice):
         """Test that card orientation is properly randomized."""
         # Mock shuffle to do nothing (preserve order)

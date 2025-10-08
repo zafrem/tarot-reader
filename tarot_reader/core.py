@@ -82,7 +82,7 @@ def random_drop(num_cards: int = 1) -> List[Dict[str, Any]]:
             "name": card["name"],
             "orientation": "Reversed" if is_reversed else "Upright",
             "meaning": card["reversed"] if is_reversed else card["upright"],
-            "draw_time": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+            "draw_time": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
         }
 
         # Add number for Major Arcana cards
@@ -97,7 +97,9 @@ def random_drop(num_cards: int = 1) -> List[Dict[str, Any]]:
     return result
 
 
-def _draw_cards(num_cards: int, personal_seed: Optional[str] = None) -> List[Dict[str, Any]]:
+def _draw_cards(
+    num_cards: int, personal_seed: Optional[str] = None
+) -> List[Dict[str, Any]]:
     """
     Draw a specified number of cards from the deck.
 
@@ -132,7 +134,7 @@ def _draw_cards(num_cards: int, personal_seed: Optional[str] = None) -> List[Dic
         card_result = {
             "name": card["name"],
             "orientation": "Reversed" if is_reversed else "Upright",
-            "meaning": card["reversed"] if is_reversed else card["upright"]
+            "meaning": card["reversed"] if is_reversed else card["upright"],
         }
 
         # Add number for Major Arcana cards
@@ -176,11 +178,7 @@ def draw_three(personal_seed: Optional[str] = None) -> Dict[str, Dict[str, Any]]
     """
     cards = _draw_cards(3, personal_seed)
 
-    return {
-        "Past": cards[0],
-        "Present": cards[1],
-        "Future": cards[2]
-    }
+    return {"Past": cards[0], "Present": cards[1], "Future": cards[2]}
 
 
 def celtic_cross(personal_seed: Optional[str] = None) -> Dict[str, Dict[str, Any]]:
@@ -206,7 +204,7 @@ def celtic_cross(personal_seed: Optional[str] = None) -> Dict[str, Dict[str, Any
         "Your Approach",
         "External Influences",
         "Hopes and Fears",
-        "Final Outcome"
+        "Final Outcome",
     ]
 
     return {position: card for position, card in zip(positions, cards)}

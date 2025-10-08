@@ -3,14 +3,22 @@ Test cases for personal seed functionality.
 """
 
 import unittest
-from tarot_reader.core import draw_single, draw_three, celtic_cross, _create_personal_seed
+from tarot_reader.core import (
+    draw_single,
+    draw_three,
+    celtic_cross,
+    _create_personal_seed,
+)
 from tarot_reader.text_formatter import get_single_card_text, get_three_card_text
 
 
 class TestPersonalSeeds(unittest.TestCase):
     def test_create_personal_seed(self):
         """Test that personal seeds are created consistently."""
+        import time
+
         seed1 = _create_personal_seed("INFP")
+        time.sleep(0.001)  # Small delay to ensure different timestamps
         seed2 = _create_personal_seed("INFP")
         seed3 = _create_personal_seed("ENFJ")
 
@@ -117,7 +125,7 @@ class TestPersonalSeeds(unittest.TestCase):
             "seeking career guidance",
             "ENFJ born 1990",
             "relationship questions",
-            "O- Scorpio rising"
+            "O- Scorpio rising",
         ]
 
         cards = []

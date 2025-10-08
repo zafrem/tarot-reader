@@ -40,8 +40,12 @@ class TestIntegration(unittest.TestCase):
         card = draw_single()
 
         # Should be able to access name and meaning as shown in example
-        name_and_orientation = f"{card['name']} ({card['orientation']})" if card['orientation'] == 'Reversed' else card['name']
-        meaning = card['meaning']
+        name_and_orientation = (
+            f"{card['name']} ({card['orientation']})"
+            if card["orientation"] == "Reversed"
+            else card["name"]
+        )
+        meaning = card["meaning"]
 
         self.assertIsInstance(name_and_orientation, str)
         self.assertIsInstance(meaning, str)
@@ -86,6 +90,7 @@ class TestIntegration(unittest.TestCase):
     def test_entertainment_disclaimer_data(self):
         """Test that the package includes entertainment disclaimer."""
         import tarot_reader
+
         docstring = tarot_reader.__doc__
 
         # Check that the docstring mentions entertainment
