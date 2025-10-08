@@ -3,6 +3,8 @@ name: CI
 on:
   push:
     branches: [ main, develop ]
+    tags:
+      - 'v*.*.*'
   pull_request:
     branches: [ main, develop ]
   workflow_call:
@@ -117,3 +119,10 @@ jobs:
       - name: Test Docker image
         run: |
           docker run --rm tarot-reader:latest tarot-reader --version
+
+  release:
+    name: Trigger Release
+    needs: [lint, test, build, docker]
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    uses: ./.github/workflows/release.yml
+    secrets: inherit
