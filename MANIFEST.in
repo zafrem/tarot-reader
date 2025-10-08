@@ -1,5 +1,4 @@
 include README.md
-include LICENSE
 include SRS.md
 recursive-include tarot_reader *.py
 recursive-include tests *.py
