@@ -10,7 +10,7 @@ name = "tarot-reader"
 version = "0.0.1"
 description = "A lightweight tarot reading package that doubles as a powerful random content generator with personal seed support"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 license = "MIT"
 authors = [
     {name = "zafrem", email = "zafrem@gmail.com"}
@@ -21,7 +21,6 @@ classifiers = [
     "Intended Audience :: Developers",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
