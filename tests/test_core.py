@@ -4,7 +4,6 @@ Test cases for the core tarot reading functionality.
 
 import unittest
 from unittest.mock import patch
-import random
 from tarot_reader.core import draw_single, draw_three, celtic_cross, _draw_cards
 
 

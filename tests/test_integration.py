@@ -76,9 +76,9 @@ class TestIntegration(unittest.TestCase):
         # This test passes if the imports and function calls work
         # since we've designed the package to use only standard library
         try:
-            card = draw_single()
-            reading = draw_three()
-            celtic = celtic_cross()
+            draw_single()
+            draw_three()
+            celtic_cross()
             self.assertTrue(True)  # If we get here, no external deps were needed
         except ImportError as e:
             self.fail(f"Package requires external dependency: {e}")

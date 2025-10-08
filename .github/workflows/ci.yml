@@ -25,13 +25,13 @@ jobs:
           pip install -e ".[dev]"
 
       - name: Run ruff
-        run: ruff check src/ tests/
+        run: ruff check tarot_reader/ tests/
 
       - name: Run black check
-        run: black --check src/ tests/
+        run: black --check tarot_reader/ tests/
 
       - name: Run mypy
-        run: mypy src/
+        run: mypy tarot_reader/
 
   test:
     name: Test
