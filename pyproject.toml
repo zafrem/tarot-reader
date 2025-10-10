@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "LICENSE.*", "COPYING*", "LICENCE*"]
+
+[project]
+name = "tarot-reader"
+version = "0.0.4"
+description = "A lightweight tarot reading package that doubles as a powerful random content generator with personal seed support"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+    {name = "zafrem", email = "zafrem@gmail.com"}
+]
+keywords = ["tarot", "cards", "random", "generator", "llm", "content", "seed", "entertainment"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/zafrem/tarot-reader"
+"Bug Reports" = "https://github.com/zafrem/tarot-reader/issues"
+Source = "https://github.com/zafrem/tarot-reader"
+
+[project.scripts]
+tarot-reader = "src.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.1.0",
+    "black>=23.0.0",
+    "mypy>=1.0.0",
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+test = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
