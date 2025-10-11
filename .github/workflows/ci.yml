@@ -185,7 +185,7 @@ jobs:
       - name: Test installed package
         if: steps.install.outcome == 'success'
         run: |
-          python -c "import tarot_reader; print(tarot_reader.__version__)"
+          python -c "import src; print(src.__version__)"
           tarot-reader --version
 
       - name: Run basic functional test
