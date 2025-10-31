@@ -1,0 +1,45 @@
+# Dockerfile for Tarot Reader REST API
+# Multi-stage build for optimized image size
+
+FROM python:3.11-slim as builder
+
+WORKDIR /app
+
+# Copy only requirements first for better caching
+COPY pyproject.toml ./
+
+# Install build dependencies and create wheel
+RUN pip install --no-cache-dir build && \
+    python -m build --wheel
+
+# Final stage
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Copy wheel from builder
+COPY --from=builder /app/dist/*.whl /tmp/
+
+# Install the package with API dependencies
+RUN pip install --no-cache-dir /tmp/*.whl[api] && \
+    rm -rf /tmp/*.whl
+
+# Copy source code
+COPY src/ /app/src/
+COPY api/ /app/api/
+
+# Create non-root user for security
+RUN useradd -m -u 1000 tarot && \
+    chown -R tarot:tarot /app
+
+USER tarot
+
+# Expose port
+EXPOSE 8000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" || exit 1
+
+# Run uvicorn with proper async settings
+CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]

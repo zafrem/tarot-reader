@@ -18,7 +18,7 @@ from .text_formatter import (
     get_reading_summary,
 )
 
-__version__ = "0.1.0"
+__version__ = "0.0.5"
 __author__ = "Tarot Reader"
 
 __all__ = [

@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["src*"]
+include = ["src*", "api*"]
 
 [tool.setuptools]
 license-files = ["LICENSE", "LICENSE.*", "COPYING*", "LICENCE*"]
 
 [project]
 name = "tarot-reader"
-version = "0.0.4"
+version = "0.0.5"
 description = "A lightweight tarot reading package that doubles as a powerful random content generator with personal seed support"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -54,4 +54,9 @@ dev = [
 test = [
     "pytest>=7.0.0",
     "pytest-cov>=4.0.0",
+]
+api = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic>=2.6.0",
 ]
