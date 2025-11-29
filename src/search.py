@@ -4,6 +4,7 @@ Card search functionality.
 
 from .deck import get_all_cards
 
+
 def search_cards(query: str):
     """
     Search for cards by name, number, or alias.
@@ -37,7 +38,7 @@ def search_cards(query: str):
 
     for card in all_cards:
         card_name_lower = card["name"].lower()
-        
+
         # Search by full name
         if query in card_name_lower:
             results.append(card)
@@ -57,31 +58,38 @@ def search_cards(query: str):
 
             if suit_char in suit_aliases:
                 suit = suit_aliases[suit_char]
-                
+
                 # court cards
                 if rank_char in court_aliases:
                     rank = court_aliases[rank_char]
                     if f"{rank} of {suit}" in card_name_lower:
                         results.append(card)
                         continue
-                
+
                 # numbered cards
                 if rank_char.isdigit():
                     rank_num = int(rank_char)
                     if rank_num == 1:
                         if f"ace of {suit}" in card_name_lower:
-                             results.append(card)
-                             continue
+                            results.append(card)
+                            continue
                     elif 1 < rank_num <= 10:
                         # e.g. two of wands
                         number_map = {
-                            2: "two", 3: "three", 4: "four", 5: "five", 6: "six",
-                            7: "seven", 8: "eight", 9: "nine", 10: "ten"
+                            2: "two",
+                            3: "three",
+                            4: "four",
+                            5: "five",
+                            6: "six",
+                            7: "seven",
+                            8: "eight",
+                            9: "nine",
+                            10: "ten",
                         }
                         if f"{number_map[rank_num]} of {suit}" in card_name_lower:
                             results.append(card)
                             continue
-    
+
     # Remove duplicates
     unique_results = []
     seen_names = set()
