@@ -195,14 +195,14 @@ Tarot Reader is a standalone Python package that:
 ---
 
 #### FR-7: Command-Line Interface
-**Description**: The system shall provide a CLI for interactive tarot readings.
+**Description**: The system shall provide an interactive CLI for tarot card search and readings.
 
 **Requirements**:
-- FR-7.1: System shall support `--type` parameter (single, three, celtic, drop)
-- FR-7.2: System shall support `--seed` parameter for personal context
-- FR-7.3: System shall support `--version` flag
-- FR-7.4: System shall display formatted output to terminal
-- FR-7.5: System shall handle invalid parameters gracefully
+- FR-7.1: The system shall present an interactive main menu with options to "Search for a card", "Shuffle cards for a reading", and "Exit".
+- FR-7.2: The search functionality shall allow users to search for cards by name, number, and aliases (e.g., s1, w10).
+- FR-7.3: The search shall display the card's name, number (if applicable), and both upright and reversed meanings.
+- FR-7.4: The "Shuffle cards" option shall initiate the tarot reading flow, including the personal seed input.
+- FR-7.5: The CLI shall loop until the user chooses to exit.
 
 **Priority**: High
 **Status**: Implemented

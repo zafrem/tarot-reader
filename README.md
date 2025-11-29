@@ -14,8 +14,11 @@ A pure tarot reading package with randomized results and optional personal seedi
 - Complete tarot deck (78 cards) with upright and reversed meanings
 - Multiple spreads: Single card, 3-Card (Past/Present/Future), Celtic Cross (10-card)
 - Personal seed system with time component for truly random readings
-- Beautiful terminal display with emojis and formatting
 - **NEW:** Async REST API with FastAPI and automatic OpenAPI documentation
+
+### 💻 CLI Features
+- Beautiful terminal display with emojis and formatting
+- Interactive CLI with card search functionality
 
 ### 🎲 Randomness Features
 - **156 unique outcomes** (78 cards × 2 orientations) with meaningful content
@@ -58,6 +61,57 @@ reading = celtic_cross()
 for position, card in reading.items():
     print(f"{position}: {card['name']} - {card['meaning']}")
 ```
+
+## CLI Usage
+
+The package includes an interactive command-line interface. To use it, run the `cli.py` script:
+
+```bash
+python3 cli.py
+```
+
+You will be presented with a main menu with the following options:
+
+1.  **Search for a card**: Look up a specific card by name, number, or alias.
+2.  **Shuffle cards for a reading**: Start a classic tarot reading session.
+3.  **Exit**: Close the CLI.
+
+### Card Search
+
+When you choose the search option, you can enter a query to find cards. The search is case-insensitive.
+
+**Search by Name:**
+
+```
+Enter your search query: The Fool
+```
+
+**Search by Number (for Major Arcana):**
+
+```
+Enter your search query: 10
+```
+
+**Search by Alias:**
+
+Aliases are created using the first letter of the suit and the card's rank.
+
+*   **Suits**: `w` (Wands), `c` (Cups), `s` (Swords), `p` (Pentacles)
+*   **Ranks**: `a` (Ace), `2-10`, `p` (Page), `kn` (Knight), `q` (Queen), `k` (King)
+
+Examples:
+
+*   `s1` or `sa` for **Ace of Swords**
+*   `w10` for **Ten of Wands**
+*   `ck` for **King of Cups**
+
+```
+Enter your search query: s1
+```
+
+### Tarot Reading
+
+This option will start the original tarot reading flow, where you can get a single card, a three-card spread, or a creative elements reading. You can also provide a personal seed for a more personalized experience.
 
 #### Personal Context (Time-Influenced Randomness)
 ```python

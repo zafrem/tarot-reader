@@ -10,6 +10,7 @@ For entertainment purposes only.
 """
 
 from .core import draw_single, draw_three, celtic_cross, random_drop
+from .search import search_cards
 from .text_formatter import (
     get_single_card_text,
     get_three_card_text,
@@ -26,6 +27,7 @@ __all__ = [
     "draw_three",
     "celtic_cross",
     "random_drop",
+    "search_cards",
     "get_single_card_text",
     "get_three_card_text",
     "get_celtic_cross_text",

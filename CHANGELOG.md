@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+## [0.0.6] - 2025-11-29
+
+### Added
+- Interactive CLI with main menu for choosing between searching and shuffling cards.
+- Card search functionality in the CLI, with support for searching by name, number, and aliases (e.g., s1, w10).
+
+### Changed
+- Refactored the CLI to be more interactive and user-friendly.
+
 ## [0.0.5] - 2025-11-01
 
 ### Added
@@ -68,20 +79,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Entertainment-focused tarot reading experience
 - Integration-ready for apps, chatbots, and terminal use
 
-## [Unreleased]
-
-### Planned
-- Additional spread types
-- Enhanced card interpretations
-- Batch reading capabilities
-- Reading history tracking
-- Custom deck support
-
 ---
 
 ## Version History
 
-- **0.0.5** - Current version with REST API support
+- **0.0.6** - Current version with interactive CLI
+- **0.0.5** - REST API support
 - **0.0.4** - CI/CD improvements
 - **0.0.1** - Initial public release
 
