@@ -4,7 +4,7 @@ Test cases for the core tarot reading functionality.
 
 import unittest
 from unittest.mock import patch
-from src.core import draw_single, draw_three, celtic_cross, _draw_cards
+from src.core import draw_single, draw_three, celtic_cross, _draw_cards, random_drop, _create_time_seed
 
 
 class TestCore(unittest.TestCase):
@@ -147,6 +147,101 @@ class TestCore(unittest.TestCase):
         # At least some cards should be different
         unique_cards = set(readings)
         self.assertGreater(len(unique_cards), 1)
+
+    def test_random_drop_returns_list(self):
+        """Test that random_drop returns a list."""
+        result = random_drop()
+        self.assertIsInstance(result, list)
+        self.assertEqual(len(result), 1)
+
+    def test_random_drop_multiple_cards(self):
+        """Test that random_drop can return multiple cards."""
+        result = random_drop(5)
+        self.assertIsInstance(result, list)
+        self.assertEqual(len(result), 5)
+
+    def test_random_drop_card_structure(self):
+        """Test that random_drop returns cards with correct structure."""
+        result = random_drop(1)
+        card = result[0]
+
+        self.assertIn("name", card)
+        self.assertIn("orientation", card)
+        self.assertIn("meaning", card)
+        self.assertIn("draw_time", card)
+        self.assertIn(card["orientation"], ["Upright", "Reversed"])
+
+    def test_random_drop_invalid_range(self):
+        """Test that random_drop raises ValueError for invalid counts."""
+        with self.assertRaises(ValueError):
+            random_drop(0)
+
+        with self.assertRaises(ValueError):
+            random_drop(-1)
+
+        with self.assertRaises(ValueError):
+            random_drop(79)
+
+    def test_random_drop_valid_range(self):
+        """Test that random_drop works with valid card counts."""
+        # Test minimum
+        result = random_drop(1)
+        self.assertEqual(len(result), 1)
+
+        # Test medium
+        result = random_drop(10)
+        self.assertEqual(len(result), 10)
+
+        # Test maximum
+        result = random_drop(78)
+        self.assertEqual(len(result), 78)
+
+    def test_random_drop_unique_cards(self):
+        """Test that random_drop returns unique cards."""
+        result = random_drop(10)
+        card_names = [card["name"] for card in result]
+        self.assertEqual(len(card_names), len(set(card_names)))
+
+    def test_random_drop_includes_timestamp(self):
+        """Test that random_drop includes draw_time in results."""
+        result = random_drop(1)
+        self.assertIn("draw_time", result[0])
+        self.assertIsInstance(result[0]["draw_time"], str)
+
+    def test_random_drop_major_arcana_numbers(self):
+        """Test that Major Arcana cards in random_drop include numbers."""
+        # Draw multiple cards to increase chance of getting Major Arcana
+        result = random_drop(20)
+        major_arcana_found = False
+        for card in result:
+            if "number" in card:
+                major_arcana_found = True
+                self.assertIsInstance(card["number"], int)
+                self.assertGreaterEqual(card["number"], 0)
+                self.assertLessEqual(card["number"], 21)
+                break
+        # This test is probabilistic but very likely to pass
+
+    def test_create_time_seed_returns_int(self):
+        """Test that _create_time_seed returns an integer."""
+        seed = _create_time_seed()
+        self.assertIsInstance(seed, int)
+
+    def test_create_time_seed_in_valid_range(self):
+        """Test that _create_time_seed returns value in valid range."""
+        seed = _create_time_seed()
+        # Should be within 32-bit integer range
+        self.assertGreaterEqual(seed, 0)
+        self.assertLess(seed, 2**32)
+
+    def test_create_time_seed_changes_over_time(self):
+        """Test that _create_time_seed produces different values."""
+        import time
+        seed1 = _create_time_seed()
+        time.sleep(0.01)  # Small delay
+        seed2 = _create_time_seed()
+        # Seeds should be different due to time change
+        self.assertNotEqual(seed1, seed2)
 
 
 if __name__ == "__main__":
