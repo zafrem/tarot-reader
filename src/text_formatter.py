@@ -124,7 +124,7 @@ def get_daily_reading_text(reading: dict) -> str:
     Args:
         reading: A reading dict as returned by core.daily_reading or
                  history.record_daily_reading (has date, name, orientation,
-                 meaning, image)
+                 meaning, images)
 
     Returns:
         Formatted string for terminal display

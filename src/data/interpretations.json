@@ -1,0 +1,782 @@
+{
+  "The Fool": {
+    "upright": [
+      "A fresh start is calling — take the leap before you talk yourself out of it.",
+      "There's a lightness available to you right now: less planning, more trusting."
+    ],
+    "reversed": [
+      "Slow down — the excitement is real, but so is the risk you're brushing past.",
+      "Wandering without a plan is starting to cost you more than it's teaching you."
+    ]
+  },
+  "The Magician": {
+    "upright": [
+      "You already have everything you need on the table — it's time to actually use it.",
+      "This is a moment to act with intention: name what you want and start building it."
+    ],
+    "reversed": [
+      "Check whether you're shaping this situation honestly, or just shaping how it looks.",
+      "A skill or resource you have isn't being used — that's the real block here."
+    ]
+  },
+  "The High Priestess": {
+    "upright": [
+      "The answer isn't in more research — it's in the quiet part of you that already knows.",
+      "Something is being revealed slowly; don't force it into the open before it's ready."
+    ],
+    "reversed": [
+      "You're overriding your gut with logic right now — that's worth questioning.",
+      "Someone (maybe you) is holding something back that needs to surface eventually."
+    ]
+  },
+  "The Empress": {
+    "upright": [
+      "Something you've been nurturing is finally ready to grow on its own.",
+      "Let yourself enjoy what's abundant right now instead of chasing what's missing."
+    ],
+    "reversed": [
+      "You're leaning on someone else to finish what only you can start.",
+      "The well feels dry — that's a sign to rest and refill, not to force output."
+    ]
+  },
+  "The Emperor": {
+    "upright": [
+      "Put structure around this before it gets out of your hands — a plan is what's missing.",
+      "Step into the role of the person in charge, even if no one handed you the title."
+    ],
+    "reversed": [
+      "You're gripping this too tightly — control is starting to look like fear.",
+      "The structure you built isn't being followed anymore, including by you."
+    ]
+  },
+  "The Hierophant": {
+    "upright": [
+      "There's real value in doing this the established way, at least for now.",
+      "Seek out someone who's already walked this path and learn from how they did it."
+    ],
+    "reversed": [
+      "The “right” way everyone else follows doesn't actually fit your situation — say so.",
+      "You're outgrowing a rule or tradition that used to make sense for you."
+    ]
+  },
+  "The Lovers": {
+    "upright": [
+      "A real choice is in front of you — pick based on what you value, not what's easy.",
+      "This works because you're both actually aligned, not just avoiding conflict."
+    ],
+    "reversed": [
+      "One side of this relationship is giving more than the other right now.",
+      "You can't choose well for anyone else until you're honest about what you want."
+    ]
+  },
+  "The Chariot": {
+    "upright": [
+      "Two opposing forces are pulling at you — steer them in one direction instead of picking a side.",
+      "Push through now; the momentum is on your side if you commit to it."
+    ],
+    "reversed": [
+      "You're moving, but not toward anything in particular — pick a direction.",
+      "Something outside your control is blocking this; forcing it harder won't help."
+    ]
+  },
+  "Strength": {
+    "upright": [
+      "The gentle approach will get you further here than the forceful one.",
+      "You're stronger than this situation is asking you to admit."
+    ],
+    "reversed": [
+      "You're questioning your own capability right when you need to trust it most.",
+      "An emotion is running the show right now more than you'd like to admit."
+    ]
+  },
+  "The Hermit": {
+    "upright": [
+      "Step back from the noise — the answer isn't going to come from outside advice.",
+      "Time alone right now isn't avoidance, it's exactly what this decision needs."
+    ],
+    "reversed": [
+      "The solitude that used to help is starting to cut you off instead.",
+      "You've been alone with this too long — it's time to let someone else in."
+    ]
+  },
+  "Wheel of Fortune": {
+    "upright": [
+      "Circumstances are shifting in your favor — this is a good moment to move, not wait.",
+      "What goes around is coming back around; trust that this cycle is turning."
+    ],
+    "reversed": [
+      "This is a rough patch in a longer cycle, not a permanent state.",
+      "You're trying to control something that was never fully yours to control."
+    ]
+  },
+  "Justice": {
+    "upright": [
+      "Be honest about your part in this before you ask for fairness from anyone else.",
+      "The facts, not the feelings, will settle this — look at them plainly."
+    ],
+    "reversed": [
+      "Someone isn't owning their part in this, and it might be you.",
+      "An imbalance here has gone unaddressed for too long — it needs naming."
+    ]
+  },
+  "The Hanged Man": {
+    "upright": [
+      "Nothing productive happens if you force this — let it pause.",
+      "A different perspective is available if you're willing to stop pushing and just look."
+    ],
+    "reversed": [
+      "You're stalling on a decision that's already been made in your gut.",
+      "This delay has stopped teaching you anything — it's just delay now."
+    ]
+  },
+  "Death": {
+    "upright": [
+      "Something needs to end cleanly before whatever comes next can actually start.",
+      "This transformation feels drastic, but it's clearing space, not just destroying."
+    ],
+    "reversed": [
+      "You're holding onto a version of this that's already over.",
+      "The change is happening internally first — let it work through before resisting it outwardly."
+    ]
+  },
+  "Temperance": {
+    "upright": [
+      "Blend the two things you've been treating as opposites — that's where this works.",
+      "Patience isn't passivity here — it's the actual strategy."
+    ],
+    "reversed": [
+      "You've swung too far in one direction and it's time to correct back.",
+      "Healing this needs consistency, not a single big gesture."
+    ]
+  },
+  "The Devil": {
+    "upright": [
+      "Name the thing you feel stuck to — it's easier to loosen once it has a name.",
+      "What looks like desire might actually be habit running on autopilot."
+    ],
+    "reversed": [
+      "You're closer to breaking free of this than it feels like right now.",
+      "Look honestly at the part of this you've been avoiding — it's not as bad as the avoidance."
+    ]
+  },
+  "The Tower": {
+    "upright": [
+      "Something's about to break open and reveal the truth — let the old structure fall so something truer can take its place.",
+      "A jarring but necessary wake-up call that clears away what wasn't built to last."
+    ],
+    "reversed": [
+      "You may be bracing against a change you already know is coming — avoiding it usually costs more than facing it.",
+      "Delaying an overdue collapse, holding together something that needs to fall."
+    ]
+  },
+  "The Star": {
+    "upright": [
+      "After a hard stretch, something genuinely good is opening up — let yourself believe it.",
+      "Small, consistent hope is more useful right now than a big dramatic answer."
+    ],
+    "reversed": [
+      "You've stopped trusting that things can get better — that's the thing to address first.",
+      "Reconnect with whatever used to give you a sense of purpose; it hasn't disappeared, just gone quiet."
+    ]
+  },
+  "The Moon": {
+    "upright": [
+      "Not everything is as clear as it looks right now — give it time before reacting.",
+      "A fear is louder than the actual threat; check which one you're responding to."
+    ],
+    "reversed": [
+      "Something you've been avoiding looking at directly is ready to be faced.",
+      "The confusion is starting to lift — trust the clarity that's returning."
+    ]
+  },
+  "The Sun": {
+    "upright": [
+      "This is a moment to actually enjoy what's working, not just move on to the next thing.",
+      "Success here is straightforward — no need to overcomplicate it."
+    ],
+    "reversed": [
+      "You're forcing positivity over something that actually needs acknowledging first.",
+      "Let yourself want the simple, playful thing instead of the impressive one."
+    ]
+  },
+  "Judgement": {
+    "upright": [
+      "You already know what you're being called to do — the hesitation is the only thing left.",
+      "This is a chance to look honestly at the past and finally let it inform, not define, what's next."
+    ],
+    "reversed": [
+      "You're talking yourself out of something you know is right for you.",
+      "A harsh inner voice is louder than the actual evidence right now."
+    ]
+  },
+  "The World": {
+    "upright": [
+      "This chapter is genuinely finished — let yourself acknowledge that before starting the next one.",
+      "The pieces you've been building finally fit together; take a moment to see the whole picture."
+    ],
+    "reversed": [
+      "You're reaching for the finish line before the work underneath it is actually done.",
+      "Something needs a real ending, not just a quiet fade-out."
+    ]
+  },
+  "Ace of Wands": {
+    "upright": [
+      "A spark of energy has shown up — act on it before it cools off.",
+      "This is the start of something, not the whole plan — just take the first step."
+    ],
+    "reversed": [
+      "The idea is there, but it's scattered — give it one clear direction.",
+      "You're getting pulled toward too many things at once; pick one to actually start."
+    ]
+  },
+  "Two of Wands": {
+    "upright": [
+      "You've outgrown where you're standing — it's time to plan the next move.",
+      "The comfort here has turned into a ceiling; look at what's beyond it."
+    ],
+    "reversed": [
+      "You're stalling on a decision because the unknown feels riskier than staying put.",
+      "A plan made in a hurry is starting to show its gaps."
+    ]
+  },
+  "Three of Wands": {
+    "upright": [
+      "What you set in motion earlier is starting to come back — watch for it.",
+      "It's time to look further ahead than you have been; think bigger scale."
+    ],
+    "reversed": [
+      "You're holding back from something you're actually ready for.",
+      "A delay outside your control is frustrating, but it's not a dead end."
+    ]
+  },
+  "Four of Wands": {
+    "upright": [
+      "This is worth pausing to celebrate before moving on to the next goal.",
+      "A sense of home or belonging is available to you right now — let it in."
+    ],
+    "reversed": [
+      "You don't need everyone else's approval to mark this as a win.",
+      "Tension with someone close is undercutting what should be a good moment."
+    ]
+  },
+  "Five of Wands": {
+    "upright": [
+      "The friction here is actually useful — it's sharpening ideas, not just causing noise.",
+      "Everyone's competing for the same thing; step back and see if that's even necessary."
+    ],
+    "reversed": [
+      "The real disagreement is happening inside you, not with anyone else.",
+      "You're avoiding a conflict that would actually resolve faster if you had it."
+    ]
+  },
+  "Six of Wands": {
+    "upright": [
+      "This win is real — let yourself be seen for it instead of downplaying it.",
+      "Momentum is on your side; use the confidence this gives you."
+    ],
+    "reversed": [
+      "The recognition you wanted isn't coming from outside — give it to yourself.",
+      "A public setback stings, but it doesn't erase what you actually accomplished."
+    ]
+  },
+  "Seven of Wands": {
+    "upright": [
+      "Hold your ground — what you've built is worth defending.",
+      "You're being challenged from multiple directions; pick the strongest position and stay there."
+    ],
+    "reversed": [
+      "You've been defending this alone for too long — it's okay to ask for backup.",
+      "The fight has stopped being worth the energy it's costing you."
+    ]
+  },
+  "Eight of Wands": {
+    "upright": [
+      "Things are moving fast now — act while the momentum is here.",
+      "A quick decision beats a perfect one right now; don't overthink the timing."
+    ],
+    "reversed": [
+      "Something you expected to move fast has stalled — that's worth investigating.",
+      "You're resisting a change that's actually already underway."
+    ]
+  },
+  "Nine of Wands": {
+    "upright": [
+      "You're closer to the finish than it feels — one more push.",
+      "This is a good moment to set a boundary you've been putting off."
+    ],
+    "reversed": [
+      "You're running on reserves that need refilling, not just willpower.",
+      "You're bracing for a threat that isn't actually there right now."
+    ]
+  },
+  "Ten of Wands": {
+    "upright": [
+      "You're carrying more than you need to — some of this isn't actually yours.",
+      "The finish line is close; the weight will lift once this is done."
+    ],
+    "reversed": [
+      "It's time to hand off part of this instead of finishing it all yourself.",
+      "Something you've been carrying is ready to be set down for good."
+    ]
+  },
+  "Page of Wands": {
+    "upright": [
+      "Follow the curiosity even if you don't know where it leads yet.",
+      "This is early-stage energy — explore it before committing to a direction."
+    ],
+    "reversed": [
+      "The idea is good, but it needs more shape before it's ready to act on.",
+      "You're talking yourself out of something before you've even tried it."
+    ]
+  },
+  "Knight of Wands": {
+    "upright": [
+      "The energy is real — channel it into action before it burns out.",
+      "This is a moment for boldness, not more deliberation."
+    ],
+    "reversed": [
+      "You're moving fast in several directions instead of one — slow down enough to aim.",
+      "The excitement outpaced the planning; go back and fill in the gaps."
+    ]
+  },
+  "Queen of Wands": {
+    "upright": [
+      "Lead with the confidence you already have — it's earned, not borrowed.",
+      "Your independence here is a strength, not something to apologize for."
+    ],
+    "reversed": [
+      "You've been performing confidence instead of feeling it — check in with yourself.",
+      "Some quiet time to reconnect with your own sense of self would help right now."
+    ]
+  },
+  "King of Wands": {
+    "upright": [
+      "Step into leading this — you have the vision, now back it with action.",
+      "Others are looking to you for direction; give it clearly."
+    ],
+    "reversed": [
+      "The standard you're holding others to might be unreasonably high right now.",
+      "A decision made in haste is starting to cost more than it saved."
+    ]
+  },
+  "Ace of Cups": {
+    "upright": [
+      "Something new is opening emotionally — let yourself feel it before analyzing it.",
+      "There's more room in you for connection than you've been allowing lately."
+    ],
+    "reversed": [
+      "An emotion you've been pushing down needs somewhere to go.",
+      "Before you can pour into someone else, you need to fill this back up for yourself."
+    ]
+  },
+  "Two of Cups": {
+    "upright": [
+      "This connection is mutual — both sides are actually showing up for it.",
+      "A partnership is forming that's worth investing real time in."
+    ],
+    "reversed": [
+      "Trust has slipped here — it's worth naming directly instead of letting it fester.",
+      "You can't repair this connection until you've repaired your relationship with yourself."
+    ]
+  },
+  "Three of Cups": {
+    "upright": [
+      "This is worth celebrating with the people who actually showed up for it.",
+      "Community and collaboration will get you further here than doing it alone."
+    ],
+    "reversed": [
+      "You need space from the group right now, and that's fine.",
+      "The celebration has tipped into excess — pull back before it costs you."
+    ]
+  },
+  "Four of Cups": {
+    "upright": [
+      "You're bored with something that used to matter — that's worth sitting with, not ignoring.",
+      "An opportunity is right in front of you, but you're too checked out to see it yet."
+    ],
+    "reversed": [
+      "It's time to come back out of your head and actually engage again.",
+      "The answer you've been withdrawing to find is ready — go check on it."
+    ]
+  },
+  "Five of Cups": {
+    "upright": [
+      "You're focused on what spilled — there's still something standing upright nearby.",
+      "Let yourself actually grieve this instead of rushing past it."
+    ],
+    "reversed": [
+      "You're ready to stop replaying this and actually move forward.",
+      "Forgive yourself for the part you played — that's what's blocking the next step."
+    ]
+  },
+  "Six of Cups": {
+    "upright": [
+      "Something from your past is relevant again — pay attention to what it's telling you.",
+      "A simple, uncomplicated joy is available if you let yourself reach for it."
+    ],
+    "reversed": [
+      "You're comparing this moment to a past one that isn't coming back — let it be its own thing.",
+      "You've lost some lightness lately; it's worth deliberately bringing back."
+    ]
+  },
+  "Seven of Cups": {
+    "upright": [
+      "Not all of these options are as real as they look — check which ones actually hold weight.",
+      "Too many possibilities at once is its own kind of stuck; narrow it down."
+    ],
+    "reversed": [
+      "Sort these options by what you actually value, not what looks most exciting.",
+      "The overwhelm clears once you commit to just one path."
+    ]
+  },
+  "Eight of Cups": {
+    "upright": [
+      "It's okay to walk away from something that isn't giving you what you need anymore.",
+      "You're looking for something deeper than what's currently in front of you — trust that instinct."
+    ],
+    "reversed": [
+      "You keep almost leaving — either commit to staying or actually go.",
+      "One more genuine attempt might be worth it before you decide this is over."
+    ]
+  },
+  "Nine of Cups": {
+    "upright": [
+      "Let yourself actually enjoy this instead of immediately wanting the next thing.",
+      "Something you wished for has arrived — take a moment to notice it."
+    ],
+    "reversed": [
+      "The satisfaction you're chasing externally needs to start from inside instead.",
+      "You have a lot to be grateful for, but it's not registering as enough right now — that's worth examining."
+    ]
+  },
+  "Ten of Cups": {
+    "upright": [
+      "This is the kind of stability worth protecting and investing in.",
+      "The people around you are genuinely aligned with you right now — notice it."
+    ],
+    "reversed": [
+      "The picture looks fine from outside, but something inside it isn't working.",
+      "A values mismatch is at the root of this tension, not the surface issue."
+    ]
+  },
+  "Page of Cups": {
+    "upright": [
+      "A gentle nudge or message is worth paying attention to right now.",
+      "Approach this with curiosity rather than a fixed plan."
+    ],
+    "reversed": [
+      "You're second-guessing a feeling that's actually worth trusting.",
+      "This reaction is bigger than the situation calls for — check what it's really about."
+    ]
+  },
+  "Knight of Cups": {
+    "upright": [
+      "Lead with sincerity here — a genuine gesture will land better than a grand one.",
+      "An offer or message is coming (or ready to be sent) — don't overthink it."
+    ],
+    "reversed": [
+      "You're pulling away because you're disappointed, not because you actually want distance.",
+      "Check whether the promise being made here will actually be followed through on."
+    ]
+  },
+  "Queen of Cups": {
+    "upright": [
+      "Your emotional read on this situation is accurate — trust it.",
+      "You can hold space for someone else without losing your own footing."
+    ],
+    "reversed": [
+      "You're giving more emotional labor here than you're getting back.",
+      "Caring for yourself right now isn't selfish, it's necessary."
+    ]
+  },
+  "King of Cups": {
+    "upright": [
+      "Respond instead of react — a calm approach will actually resolve this.",
+      "You can be kind and firm at the same time here."
+    ],
+    "reversed": [
+      "Check whether you're managing this situation honestly or just managing how it looks.",
+      "Your own feelings need attention before you can steady anyone else's."
+    ]
+  },
+  "Ace of Swords": {
+    "upright": [
+      "The clarity you've been looking for just arrived — act on it before doubt creeps back in.",
+      "A sharp, honest truth is available right now if you're willing to name it plainly."
+    ],
+    "reversed": [
+      "You're seeing this more clearly than you were, but it's still not fully settled.",
+      "Something is muddying your judgment right now — figure out what before deciding."
+    ]
+  },
+  "Two of Swords": {
+    "upright": [
+      "You're avoiding a decision by staying perfectly balanced between two options.",
+      "Both choices have real costs; pick based on what matters more to you, not which is safer."
+    ],
+    "reversed": [
+      "More information isn't going to break this deadlock — a choice will.",
+      "You already have enough to decide; the hesitation is the actual problem now."
+    ]
+  },
+  "Three of Swords": {
+    "upright": [
+      "This hurts because it's real — let yourself feel it instead of rushing past it.",
+      "A painful truth has surfaced; it's better out than buried."
+    ],
+    "reversed": [
+      "The story you're telling yourself about this is harsher than what actually happened.",
+      "You're further along in healing this than you're giving yourself credit for."
+    ]
+  },
+  "Four of Swords": {
+    "upright": [
+      "You need actual rest here, not just a break from the visible work.",
+      "Step back before deciding anything else — you're too depleted to see clearly right now."
+    ],
+    "reversed": [
+      "You've pushed past tired into something that needs real recovery time.",
+      "The rest is overdue and putting it off further will cost you more."
+    ]
+  },
+  "Five of Swords": {
+    "upright": [
+      "Winning this argument might cost you the relationship — decide if it's worth it.",
+      "Not every conflict needs to be won; some just need to end."
+    ],
+    "reversed": [
+      "An old resentment is still shaping how you're acting now — it's worth addressing directly.",
+      "There's an opening to make amends here if you're willing to go first."
+    ]
+  },
+  "Six of Swords": {
+    "upright": [
+      "You're moving away from something difficult — let the distance actually help.",
+      "This transition is slow, but it's steady progress, not stalling."
+    ],
+    "reversed": [
+      "Something from where you're leaving is still unresolved — it'll follow you if you don't close it.",
+      "You're resisting a move that would actually make things easier."
+    ]
+  },
+  "Seven of Swords": {
+    "upright": [
+      "Be strategic here, but be honest with yourself about whether you're also cutting corners.",
+      "Something isn't being said openly in this situation — notice who's withholding what."
+    ],
+    "reversed": [
+      "A secret (maybe your own) is taking more energy to maintain than it's worth.",
+      "You're doubting your right to be here more than the situation actually warrants."
+    ]
+  },
+  "Eight of Swords": {
+    "upright": [
+      "The trap here is mostly made of your own thinking — the way out exists, it's just not obvious yet.",
+      "You have more options than you currently believe you do."
+    ],
+    "reversed": [
+      "A belief about what you can't do is starting to loosen — keep pulling on that thread.",
+      "You're finally seeing a way out of a mindset that's been running the show for a while."
+    ]
+  },
+  "Nine of Swords": {
+    "upright": [
+      "The worst-case version in your head is louder than what's actually likely to happen.",
+      "This fear is asking for attention, not more late-night rumination — talk it through with someone."
+    ],
+    "reversed": [
+      "The worry is starting to ease, but it needs a real outlet, not just time.",
+      "Something you've kept private about this fear needs to be said out loud."
+    ]
+  },
+  "Ten of Swords": {
+    "upright": [
+      "This ending is brutal, but it is an ending — there's nowhere further down from here.",
+      "Let this be fully over before trying to rebuild; half-closing it will just reopen the wound."
+    ],
+    "reversed": [
+      "You're through the worst of it, even if it doesn't feel that way yet.",
+      "Holding onto this past its natural end is what's prolonging the pain."
+    ]
+  },
+  "Page of Swords": {
+    "upright": [
+      "Ask the question you've been sitting on — curiosity is the right move here.",
+      "A new way of saying this might land better than how you've been saying it."
+    ],
+    "reversed": [
+      "You've said a lot about this — it's time to actually do something.",
+      "Slow down before speaking; this needs more thought than it's getting."
+    ]
+  },
+  "Knight of Swords": {
+    "upright": [
+      "Move decisively — hesitation will cost you more than an imperfect fast decision.",
+      "Your drive here is an asset; just make sure it's aimed at the right target."
+    ],
+    "reversed": [
+      "You're moving fast in a direction you haven't actually confirmed is right.",
+      "The pace you're keeping isn't sustainable — something has to give."
+    ]
+  },
+  "Queen of Swords": {
+    "upright": [
+      "Say the direct thing — it's kinder in the long run than softening it into confusion.",
+      "A clear boundary here will serve you better than another round of politeness."
+    ],
+    "reversed": [
+      "The directness has tipped into harshness — check the delivery, not just the message.",
+      "You're letting someone else's opinion override judgment you'd normally trust."
+    ]
+  },
+  "King of Swords": {
+    "upright": [
+      "Decide based on the facts here, not on how you'd like them to be.",
+      "Your judgment on this is sound — trust it and act with authority."
+    ],
+    "reversed": [
+      "Check whether the logic you're using is genuinely sound, or just convenient.",
+      "Authority is being used here to control rather than to clarify — notice which one you're doing."
+    ]
+  },
+  "Ace of Pentacles": {
+    "upright": [
+      "A solid, practical opportunity is in front of you — it's worth taking seriously.",
+      "This is a good moment to plant something you intend to grow for the long term."
+    ],
+    "reversed": [
+      "An opportunity slipped by because the groundwork wasn't there yet — that's fixable next time.",
+      "Before chasing the next opportunity, make sure there's an actual plan behind it."
+    ]
+  },
+  "Two of Pentacles": {
+    "upright": [
+      "You can keep both of these going, but only if you stay flexible about how.",
+      "Juggling this is fine for now — just keep checking that nothing's about to drop."
+    ],
+    "reversed": [
+      "You've taken on more than can actually be balanced — something needs to go.",
+      "It's time to redo the priority list; the old order of things doesn't fit anymore."
+    ]
+  },
+  "Three of Pentacles": {
+    "upright": [
+      "This gets better with other people involved — don't try to do it solo.",
+      "The plan is solid; now it's about actually building it, piece by piece."
+    ],
+    "reversed": [
+      "The team isn't actually aligned on the goal here — that's worth addressing before continuing.",
+      "You're doing this alone when it would go better with collaboration — ask for help."
+    ]
+  },
+  "Four of Pentacles": {
+    "upright": [
+      "Holding onto what you have makes sense right now — this isn't the moment to spend it all.",
+      "Security matters here, but check you're not gripping so tight it's costing you flexibility."
+    ],
+    "reversed": [
+      "You're spending (money, energy, time) faster than you're replacing it.",
+      "The self-protection has turned into hoarding — it's safe to loosen your grip a little."
+    ]
+  },
+  "Five of Pentacles": {
+    "upright": [
+      "This is a genuinely hard stretch — help is available even if it doesn't feel like it right now.",
+      "You're isolating with this problem when support is actually within reach."
+    ],
+    "reversed": [
+      "The worst of this hardship is behind you, even if recovery is slow.",
+      "You're financially or materially fine, but something else feels depleted — name what."
+    ]
+  },
+  "Six of Pentacles": {
+    "upright": [
+      "Check the balance here — is this exchange actually even, or is it one-sided?",
+      "You're in a position to give right now; do it without expecting something back."
+    ],
+    "reversed": [
+      "It's your turn to receive, not just give — let yourself accept the help.",
+      "Something owed (money, effort, credit) hasn't actually been settled yet."
+    ]
+  },
+  "Seven of Pentacles": {
+    "upright": [
+      "The results are coming, just not on the timeline you'd like — keep going.",
+      "This is a good moment to actually assess: is the effort still paying off?"
+    ],
+    "reversed": [
+      "You've been patient long enough with something that isn't actually growing — reassess it.",
+      "The impatience is understandable, but rushing this now will cost more than waiting a little longer."
+    ]
+  },
+  "Eight of Pentacles": {
+    "upright": [
+      "The repetition is how mastery actually happens — trust the process, not just the outcome.",
+      "Focus on the craft right now; the recognition will follow later."
+    ],
+    "reversed": [
+      "You're polishing something that's already good enough to move forward.",
+      "The effort here is real, but it's aimed at the wrong part of the problem."
+    ]
+  },
+  "Nine of Pentacles": {
+    "upright": [
+      "You built this yourself — let yourself actually enjoy the result.",
+      "Independence looks good on you right now; you don't need to justify it."
+    ],
+    "reversed": [
+      "Your worth isn't actually tied to how much you're producing — that's worth remembering.",
+      "You've been hustling so long you've forgotten what enjoying the result feels like."
+    ]
+  },
+  "Ten of Pentacles": {
+    "upright": [
+      "This is about the long game — what you're building now outlasts the immediate reward.",
+      "Family or community support is part of what makes this stable — don't discount it."
+    ],
+    "reversed": [
+      "Something about how success is being measured here feels hollow — worth examining why.",
+      "A setback here is real, but it doesn't undo the foundation you've already built."
+    ]
+  },
+  "Page of Pentacles": {
+    "upright": [
+      "Start small and concrete — this is a moment for practical first steps, not big leaps.",
+      "A genuine opportunity to learn or earn is here if you commit to it seriously."
+    ],
+    "reversed": [
+      "You've been circling this instead of starting — pick the smallest possible first step.",
+      "A past misstep here actually taught you something useful — use it."
+    ]
+  },
+  "Knight of Pentacles": {
+    "upright": [
+      "Steady, unglamorous effort is what actually gets this done — keep at it.",
+      "You don't need a dramatic move here, just consistency."
+    ],
+    "reversed": [
+      "The routine has gone stale — it might be time to change the method, not just push harder.",
+      "An obstacle is testing your patience more than your actual ability to do this."
+    ]
+  },
+  "Queen of Pentacles": {
+    "upright": [
+      "You're holding a lot together right now — give yourself credit for how well it's actually working.",
+      "Practical care is still care — you don't need to prove it any other way."
+    ],
+    "reversed": [
+      "Something's out of balance between what you're giving to others and what you're keeping for yourself.",
+      "It's time to prioritize your own needs alongside everyone else's you've been managing."
+    ]
+  },
+  "King of Pentacles": {
+    "upright": [
+      "You've built real stability here — trust it enough to make a confident move.",
+      "Lead with the steadiness you've earned; it's more valuable than it feels."
+    ],
+    "reversed": [
+      "Check whether you're chasing security or just chasing status right now.",
+      "A rigid approach is starting to work against you — some flexibility would help here."
+    ]
+  }
+}

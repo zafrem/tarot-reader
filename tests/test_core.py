@@ -257,8 +257,9 @@ class TestDailyReading(unittest.TestCase):
         """Test that daily_reading returns a dict with all expected keys."""
         reading = daily_reading(date="2026-01-01")
         self.assertIsInstance(reading, dict)
-        for key in ("date", "name", "orientation", "meaning", "image"):
+        for key in ("date", "name", "orientation", "meaning", "images"):
             self.assertIn(key, reading)
+        self.assertIn("default", reading["images"])
         self.assertEqual(reading["date"], "2026-01-01")
         self.assertIn(reading["orientation"], ["Upright", "Reversed"])
 

@@ -23,7 +23,7 @@ MAJOR_ARCANA = [
         "number": c["number"],
         "upright": c["upright"],
         "reversed": c["reversed"],
-        "image": c["image"],
+        "images": c["images"],
     }
     for c in _RAW_CARDS
     if c["arcana"] == "major"
@@ -37,7 +37,7 @@ for _c in _RAW_CARDS:
                 "name": _c["name"],
                 "upright": _c["upright"],
                 "reversed": _c["reversed"],
-                "image": _c["image"],
+                "images": _c["images"],
             }
         )
 
@@ -56,12 +56,19 @@ def get_all_cards():
     return all_cards
 
 
-def get_card_image_path(card):
+def get_card_image_path(card, image_type: str = "default"):
     """Return the absolute filesystem path to a card's image.
 
     Args:
-        card: A card dict (as returned by get_all_cards()) or an "image"
-              value (e.g. "images/the_fool.jpg") directly.
+        card: A card dict (as returned by get_all_cards()), an "images"
+              dict directly, or an image path string (e.g.
+              "images/the_fool.jpg") to resolve as-is.
+        image_type: Which entry of the card's "images" dict to resolve
+                    (default: "default").
     """
-    image = card["image"] if isinstance(card, dict) else card
+    if isinstance(card, dict):
+        images = card["images"] if "images" in card else card
+        image = images[image_type]
+    else:
+        image = card
     return DATA_DIR / image

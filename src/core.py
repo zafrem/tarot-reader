@@ -105,7 +105,7 @@ def random_drop(num_cards: int = 1) -> List[Dict[str, Any]]:
             "orientation": "Reversed" if is_reversed else "Upright",
             "meaning": card["reversed"] if is_reversed else card["upright"],
             "draw_time": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
-            "image": card["image"],
+            "images": card["images"],
         }
 
         # Add number for Major Arcana cards
@@ -158,7 +158,7 @@ def _draw_cards(
             "name": card["name"],
             "orientation": "Reversed" if is_reversed else "Upright",
             "meaning": card["reversed"] if is_reversed else card["upright"],
-            "image": card["image"],
+            "images": card["images"],
         }
 
         # Add number for Major Arcana cards
@@ -223,7 +223,7 @@ def daily_reading(
               today in local time
 
     Returns:
-        Dictionary with date, name, orientation, meaning, and image
+        Dictionary with date, name, orientation, meaning, and images
     """
     day = date or time.strftime("%Y-%m-%d")
     seed = _create_daily_seed(day, personal_seed)
@@ -240,7 +240,7 @@ def daily_reading(
         "name": card["name"],
         "orientation": "Reversed" if is_reversed else "Upright",
         "meaning": card["reversed"] if is_reversed else card["upright"],
-        "image": card["image"],
+        "images": card["images"],
     }
 
     if "number" in card:

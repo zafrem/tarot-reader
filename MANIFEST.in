@@ -1,5 +1,4 @@
 include README.md
-include SRS.md
 recursive-include src *.py
 recursive-include src/data *.json *.jpg *.md
 recursive-include tests *.py
