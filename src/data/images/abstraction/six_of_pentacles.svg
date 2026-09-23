@@ -1,9 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
   <rect width="300" height="450" fill="#5c3a21"/>
 
-  <!-- sigil -->
-  <path d="M 150 122 L 126 62 L 174 62 Z" fill="none" stroke="#9aa66b" stroke-width="4" stroke-linejoin="round"/>
-  <line x1="132" y1="84" x2="168" y2="84" stroke="#9aa66b" stroke-width="4"/>
+    <!-- sigil: 6 small pentacles glyphs, one per pip -->
+  <path d="M 114 89 L 105 71 L 123 71 Z" fill="none" stroke="#9aa66b" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="105" y1="80" x2="123" y2="80" stroke="#9aa66b" stroke-width="2.5"/>
+  <path d="M 150 89 L 141 71 L 159 71 Z" fill="none" stroke="#9aa66b" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="141" y1="80" x2="159" y2="80" stroke="#9aa66b" stroke-width="2.5"/>
+  <path d="M 186 89 L 177 71 L 195 71 Z" fill="none" stroke="#9aa66b" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="177" y1="80" x2="195" y2="80" stroke="#9aa66b" stroke-width="2.5"/>
+  <path d="M 114 121 L 105 103 L 123 103 Z" fill="none" stroke="#9aa66b" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="105" y1="112" x2="123" y2="112" stroke="#9aa66b" stroke-width="2.5"/>
+  <path d="M 150 121 L 141 103 L 159 103 Z" fill="none" stroke="#9aa66b" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="141" y1="112" x2="159" y2="112" stroke="#9aa66b" stroke-width="2.5"/>
+  <path d="M 186 121 L 177 103 L 195 103 Z" fill="none" stroke="#9aa66b" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="177" y1="112" x2="195" y2="112" stroke="#9aa66b" stroke-width="2.5"/>
 
   <!-- name -->
   <text x="150" y="255" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#9aa66b">Six of</text>

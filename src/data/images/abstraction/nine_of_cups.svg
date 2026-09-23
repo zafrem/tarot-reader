@@ -1,8 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
   <rect width="300" height="450" fill="#1c3d5a"/>
 
-  <!-- sigil -->
-  <path d="M 150 118 L 128 66 L 172 66 Z" fill="none" stroke="#bfe3d0" stroke-width="4" stroke-linejoin="round"/>
+    <!-- sigil: 9 small cups glyphs, one per pip -->
+  <path d="M 114 77 L 105 59 L 123 59 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 150 77 L 141 59 L 159 59 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 186 77 L 177 59 L 195 59 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 114 105 L 105 87 L 123 87 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 150 105 L 141 87 L 159 87 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 186 105 L 177 87 L 195 87 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 114 133 L 105 115 L 123 115 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 150 133 L 141 115 L 159 115 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 186 133 L 177 115 L 195 115 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
 
   <!-- name -->
   <text x="150" y="255" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#bfe3d0">Nine</text>

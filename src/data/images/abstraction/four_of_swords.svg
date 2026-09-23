@@ -1,9 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
   <rect width="300" height="450" fill="#a89f91"/>
 
-  <!-- sigil -->
-  <path d="M 150 62 L 126 122 L 174 122 Z" fill="none" stroke="#2b2620" stroke-width="4" stroke-linejoin="round"/>
-  <line x1="132" y1="100" x2="168" y2="100" stroke="#2b2620" stroke-width="4"/>
+    <!-- sigil: 4 small swords glyphs, one per pip -->
+  <path d="M 132 71 L 123 89 L 141 89 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="123" y1="80" x2="141" y2="80" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 168 71 L 159 89 L 177 89 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="159" y1="80" x2="177" y2="80" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 132 103 L 123 121 L 141 121 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="123" y1="112" x2="141" y2="112" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 168 103 L 159 121 L 177 121 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="159" y1="112" x2="177" y2="112" stroke="#2b2620" stroke-width="2.5"/>
 
   <!-- name -->
   <text x="150" y="255" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#2b2620">Four of</text>

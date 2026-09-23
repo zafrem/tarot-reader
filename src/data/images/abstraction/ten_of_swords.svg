@@ -1,9 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
   <rect width="300" height="450" fill="#a89f91"/>
 
-  <!-- sigil -->
-  <path d="M 150 62 L 126 122 L 174 122 Z" fill="none" stroke="#2b2620" stroke-width="4" stroke-linejoin="round"/>
-  <line x1="132" y1="100" x2="168" y2="100" stroke="#2b2620" stroke-width="4"/>
+    <!-- sigil: 10 small swords glyphs, one per pip -->
+  <path d="M 96 59 L 87 77 L 105 77 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="87" y1="68" x2="105" y2="68" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 132 59 L 123 77 L 141 77 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="123" y1="68" x2="141" y2="68" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 168 59 L 159 77 L 177 77 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="159" y1="68" x2="177" y2="68" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 204 59 L 195 77 L 213 77 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="195" y1="68" x2="213" y2="68" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 114 87 L 105 105 L 123 105 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="105" y1="96" x2="123" y2="96" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 150 87 L 141 105 L 159 105 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="141" y1="96" x2="159" y2="96" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 186 87 L 177 105 L 195 105 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="177" y1="96" x2="195" y2="96" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 114 115 L 105 133 L 123 133 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="105" y1="124" x2="123" y2="124" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 150 115 L 141 133 L 159 133 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="141" y1="124" x2="159" y2="124" stroke="#2b2620" stroke-width="2.5"/>
+  <path d="M 186 115 L 177 133 L 195 133 Z" fill="none" stroke="#2b2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="177" y1="124" x2="195" y2="124" stroke="#2b2620" stroke-width="2.5"/>
 
   <!-- name -->
   <text x="150" y="255" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#2b2620">Ten of</text>

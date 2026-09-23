@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
-  <rect width="300" height="450" fill="#1b3a2f"/>
+  <rect width="300" height="450" fill="#241e4a"/>
 
   <!-- sigil -->
-  <ellipse cx="150" cy="100" rx="36" ry="30" fill="none" stroke="#c9a15a" stroke-width="4"/>
-  <g stroke="#c9a15a" stroke-width="2.5">
+  <ellipse cx="150" cy="100" rx="36" ry="30" fill="none" stroke="#d0c8e8" stroke-width="4"/>
+  <g stroke="#d0c8e8" stroke-width="2.5">
     <line x1="150" y1="66" x2="150" y2="58"/>
     <line x1="150" y1="134" x2="150" y2="142"/>
     <line x1="184" y1="88" x2="191" y2="84"/>
@@ -13,8 +13,8 @@
   </g>
 
   <!-- name -->
-  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#c9a15a">The World</text>
+  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#d0c8e8">The World</text>
 
   <!-- rank index -->
-  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#c9a15a" opacity="0.7">21</text>
+  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#d0c8e8" opacity="0.7">21</text>
 </svg>

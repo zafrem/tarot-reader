@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
-  <rect width="300" height="450" fill="#1b3a2f"/>
+  <rect width="300" height="450" fill="#3d4a5c"/>
 
   <!-- small sigil: the void with a line stepping past its edge -->
-  <circle cx="150" cy="100" r="34" fill="none" stroke="#c9a15a" stroke-width="4"/>
-  <line x1="150" y1="100" x2="186" y2="60" stroke="#c9a15a" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="186" cy="60" r="4.5" fill="#c9a15a"/>
+  <circle cx="150" cy="100" r="34" fill="none" stroke="#e8ecf0" stroke-width="4"/>
+  <line x1="150" y1="100" x2="186" y2="60" stroke="#e8ecf0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="186" cy="60" r="4.5" fill="#e8ecf0"/>
 
   <!-- name, the dominant element -->
-  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#c9a15a">The Fool</text>
+  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#e8ecf0">The Fool</text>
 
   <!-- small rank index, tucked low -->
-  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#c9a15a" opacity="0.7">0</text>
+  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#e8ecf0" opacity="0.7">0</text>
 </svg>

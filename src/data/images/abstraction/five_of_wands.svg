@@ -1,8 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
   <rect width="300" height="450" fill="#b5451b"/>
 
-  <!-- sigil -->
-  <path d="M 150 66 L 128 118 L 172 118 Z" fill="none" stroke="#f6ead1" stroke-width="4" stroke-linejoin="round"/>
+    <!-- sigil: 5 small wands glyphs, one per pip -->
+  <path d="M 114 71 L 105 89 L 123 89 Z" fill="none" stroke="#f6ead1" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 150 71 L 141 89 L 159 89 Z" fill="none" stroke="#f6ead1" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 186 71 L 177 89 L 195 89 Z" fill="none" stroke="#f6ead1" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 132 103 L 123 121 L 141 121 Z" fill="none" stroke="#f6ead1" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 168 103 L 159 121 L 177 121 Z" fill="none" stroke="#f6ead1" stroke-width="2.5" stroke-linejoin="round"/>
 
   <!-- name -->
   <text x="150" y="255" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#f6ead1">Five of</text>

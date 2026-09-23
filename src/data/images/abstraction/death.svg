@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
-  <rect width="300" height="450" fill="#1b3a2f"/>
+  <rect width="300" height="450" fill="#4a1e2e"/>
 
   <!-- sigil -->
-  <path d="M 122 66 C 122 110, 178 110, 178 130" fill="none" stroke="#c9a15a" stroke-width="4" stroke-linecap="round"/>
-  <path d="M 178 130 L 168 122 M 178 130 L 174 142" fill="none" stroke="#c9a15a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 122 66 C 122 110, 178 110, 178 130" fill="none" stroke="#e8c8d0" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 178 130 L 168 122 M 178 130 L 174 142" fill="none" stroke="#e8c8d0" stroke-width="4" stroke-linecap="round"/>
 
   <!-- name -->
-  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#c9a15a">Death</text>
+  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#e8c8d0">Death</text>
 
   <!-- rank index -->
-  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#c9a15a" opacity="0.7">13</text>
+  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#e8c8d0" opacity="0.7">13</text>
 </svg>

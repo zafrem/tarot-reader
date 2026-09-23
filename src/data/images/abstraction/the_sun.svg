@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
-  <rect width="300" height="450" fill="#1b3a2f"/>
+  <rect width="300" height="450" fill="#7a5218"/>
 
   <!-- sigil -->
-  <circle cx="150" cy="100" r="22" fill="none" stroke="#c9a15a" stroke-width="4"/>
-  <g stroke="#c9a15a" stroke-width="3" stroke-linecap="round">
+  <circle cx="150" cy="100" r="22" fill="none" stroke="#f5e8c8" stroke-width="4"/>
+  <g stroke="#f5e8c8" stroke-width="3" stroke-linecap="round">
     <line x1="150" y1="66" x2="150" y2="56"/>
     <line x1="150" y1="134" x2="150" y2="144"/>
     <line x1="116" y1="100" x2="106" y2="100"/>
@@ -15,8 +15,8 @@
   </g>
 
   <!-- name -->
-  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#c9a15a">The Sun</text>
+  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#f5e8c8">The Sun</text>
 
   <!-- rank index -->
-  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#c9a15a" opacity="0.7">19</text>
+  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#f5e8c8" opacity="0.7">19</text>
 </svg>

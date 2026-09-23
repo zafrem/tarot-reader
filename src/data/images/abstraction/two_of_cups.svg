@@ -1,8 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
   <rect width="300" height="450" fill="#1c3d5a"/>
 
-  <!-- sigil -->
-  <path d="M 150 118 L 128 66 L 172 66 Z" fill="none" stroke="#bfe3d0" stroke-width="4" stroke-linejoin="round"/>
+    <!-- sigil: 2 small cups glyphs, one per pip -->
+  <path d="M 132 104 L 123 86 L 141 86 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M 168 104 L 159 86 L 177 86 Z" fill="none" stroke="#bfe3d0" stroke-width="2.5" stroke-linejoin="round"/>
 
   <!-- name -->
   <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#bfe3d0">Two of Cups</text>

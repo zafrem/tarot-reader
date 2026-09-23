@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
-  <rect width="300" height="450" fill="#1b3a2f"/>
+  <rect width="300" height="450" fill="#3d2e5c"/>
 
   <!-- sigil -->
-  <circle cx="150" cy="100" r="34" fill="none" stroke="#c9a15a" stroke-width="4"/>
-  <g stroke="#c9a15a" stroke-width="3">
+  <circle cx="150" cy="100" r="34" fill="none" stroke="#e0d4f0" stroke-width="4"/>
+  <g stroke="#e0d4f0" stroke-width="3">
     <line x1="150" y1="66" x2="150" y2="134"/>
     <line x1="116" y1="100" x2="184" y2="100"/>
     <line x1="126" y1="76" x2="174" y2="124"/>
@@ -11,9 +11,9 @@
   </g>
 
   <!-- name -->
-  <text x="150" y="255" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#c9a15a">Wheel of</text>
-  <text x="150" y="313" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#c9a15a">Fortune</text>
+  <text x="150" y="255" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#e0d4f0">Wheel of</text>
+  <text x="150" y="313" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#e0d4f0">Fortune</text>
 
   <!-- rank index -->
-  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#c9a15a" opacity="0.7">10</text>
+  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#e0d4f0" opacity="0.7">10</text>
 </svg>

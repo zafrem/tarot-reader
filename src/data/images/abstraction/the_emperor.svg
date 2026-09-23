@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
-  <rect width="300" height="450" fill="#1b3a2f"/>
+  <rect width="300" height="450" fill="#6b2020"/>
 
   <!-- sigil -->
-  <path d="M 150 128 C 150 100, 128 100, 122 78 M 150 128 C 150 100, 172 100, 178 78" fill="none" stroke="#c9a15a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 150 128 C 150 100, 128 100, 122 78 M 150 128 C 150 100, 172 100, 178 78" fill="none" stroke="#f0d8c8" stroke-width="4" stroke-linecap="round"/>
 
   <!-- name -->
-  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#c9a15a">The Emperor</text>
+  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#f0d8c8">The Emperor</text>
 
   <!-- rank index -->
-  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#c9a15a" opacity="0.7">4</text>
+  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#f0d8c8" opacity="0.7">4</text>
 </svg>

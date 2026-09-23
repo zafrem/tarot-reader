@@ -1,9 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
   <rect width="300" height="450" fill="#5c3a21"/>
 
-  <!-- sigil -->
-  <path d="M 150 122 L 126 62 L 174 62 Z" fill="none" stroke="#9aa66b" stroke-width="4" stroke-linejoin="round"/>
-  <line x1="132" y1="84" x2="168" y2="84" stroke="#9aa66b" stroke-width="4"/>
+    <!-- sigil: 3 small pentacles glyphs, one per pip -->
+  <path d="M 132 89 L 123 71 L 141 71 Z" fill="none" stroke="#9aa66b" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="123" y1="80" x2="141" y2="80" stroke="#9aa66b" stroke-width="2.5"/>
+  <path d="M 168 89 L 159 71 L 177 71 Z" fill="none" stroke="#9aa66b" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="159" y1="80" x2="177" y2="80" stroke="#9aa66b" stroke-width="2.5"/>
+  <path d="M 150 121 L 141 103 L 159 103 Z" fill="none" stroke="#9aa66b" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="141" y1="112" x2="159" y2="112" stroke="#9aa66b" stroke-width="2.5"/>
 
   <!-- name -->
   <text x="150" y="255" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#9aa66b">Three of</text>
