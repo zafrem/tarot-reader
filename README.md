@@ -288,16 +288,6 @@ uvicorn api.main:app --reload
 python -m api.main
 ```
 
-**Using Docker:**
-```bash
-# Build and run with docker-compose
-docker-compose up api
-
-# Or build manually
-docker build -f docker/Dockerfile.api -t tarot-reader-api .
-docker run -p 8000:8000 tarot-reader-api
-```
-
 **Production Deployment:**
 ```bash
 # With multiple workers

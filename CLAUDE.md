@@ -40,10 +40,6 @@ export TAROT_READER_HOME=/path/to/dir
 pip install -e ".[api]"
 uvicorn api.main:app --reload
 # Docs at /docs (Swagger) and /redoc
-
-# Docker
-docker-compose up api          # production-style API container
-docker-compose --profile dev up api-dev   # hot-reload dev container on :8001
 ```
 
 There are two separate CLIs: `cli.py` at the repo root (interactive menu, search + full reading walkthrough, imports `from src import *`) and `src/__main__.py` (argparse-based, installed as the `tarot-reader` console script via `pyproject.toml`). Don't conflate them when asked to change "the CLI."
@@ -70,6 +66,6 @@ There are two separate CLIs: `cli.py` at the repo root (interactive menu, search
 
 `__version__` is duplicated in three places and must be kept in sync manually: `pyproject.toml` (`[project].version`), `src/__init__.py`, and the hardcoded strings in `api/main.py` (FastAPI `version=`, root endpoint response, `HealthCheckResponse`).
 
-## CI/CD (`.github/workflows/ci.yml`)
+## Scope
 
-Push/PR to `main`/`develop` runs lint (ruff, black --check, mypy — scoped to `src/ tests/`, not `api/` or `cli.py`) → tests (matrix across OS × Python 3.8-3.12; installs `.[test,api]` so the fastapi-dependent tests in `tests/test_daily_api.py` actually run) → build → docker build. Tag pushes matching `v*.*.*` additionally run the full release pipeline: publish to TestPyPI → install-and-smoke-test from TestPyPI → publish to PyPI → GitHub release → push Docker image to Docker Hub. `.github/workflows/publish.yml` is a separate, simpler manual/tag-triggered TestPyPI-only publish workflow.
+This repo is intentionally minimal: `src/` (core library + data), `api/`, the two CLIs, `tests/`, and packaging (`pyproject.toml`, `MANIFEST.in`). No CI/CD workflows, no Docker packaging, no design docs/specs — those were removed in favor of keeping this repo strictly to the library, API, and CLI code plus their tests. The [tarot-web](https://github.com/zafrem/tarot-web) desktop app is a separate repo that pulls this one in as a git submodule and reads `src/data/deck.json` + `src/data/images/` directly (no Python calls, no HTTP dependency on `api/`).
