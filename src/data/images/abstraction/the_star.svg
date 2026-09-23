@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
+  <rect width="300" height="450" fill="#1b3a2f"/>
+
+  <!-- sigil -->
+  <path d="M 150 60 L 159 88 L 188 84 L 165 103 L 176 131 L 150 114 L 124 131 L 135 103 L 112 84 L 141 88 Z" fill="none" stroke="#c9a15a" stroke-width="3"/>
+
+  <!-- name -->
+  <text x="150" y="282" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="62" font-weight="700" fill="#c9a15a">The Star</text>
+
+  <!-- rank index -->
+  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#c9a15a" opacity="0.7">17</text>
+</svg>

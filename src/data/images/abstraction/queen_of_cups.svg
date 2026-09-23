@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
+  <rect width="300" height="450" fill="#1c3d5a"/>
+
+  <!-- sigil -->
+  <path d="M 150 118 L 128 66 L 172 66 Z" fill="none" stroke="#bfe3d0" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- name -->
+  <text x="150" y="255" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#bfe3d0">Queen</text>
+  <text x="150" y="313" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#bfe3d0">of Cups</text>
+
+  <!-- rank index -->
+  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#bfe3d0" opacity="0.7">Q</text>
+</svg>

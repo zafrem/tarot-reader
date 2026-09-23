@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
+  <rect width="300" height="450" fill="#a89f91"/>
+
+  <!-- sigil -->
+  <path d="M 150 62 L 126 122 L 174 122 Z" fill="none" stroke="#2b2620" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="132" y1="100" x2="168" y2="100" stroke="#2b2620" stroke-width="4"/>
+
+  <!-- name -->
+  <text x="150" y="255" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#2b2620">Five of</text>
+  <text x="150" y="313" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="50" font-weight="700" fill="#2b2620">Swords</text>
+
+  <!-- rank index -->
+  <text x="26" y="424" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="15" fill="#2b2620" opacity="0.7">5</text>
+</svg>
