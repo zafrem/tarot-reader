@@ -17,11 +17,9 @@ from src.core import daily_reading
 class TestTextFormatter(unittest.TestCase):
     def test_get_single_card_text(self):
         """Test single card text formatting."""
-        # Test default format (now uses emoji format)
         result = get_single_card_text()
         self.assertIsInstance(result, str)
         self.assertGreater(len(result), 0)
-        self.assertIn("🎴", result)  # Should have card emoji
         self.assertIn("↳", result)  # Should have arrow
 
     def test_get_three_card_text(self):
@@ -33,7 +31,6 @@ class TestTextFormatter(unittest.TestCase):
         self.assertIn("PRESENT:", result)
         self.assertIn("FUTURE:", result)
         self.assertIn("THREE CARD SPREAD", result)
-        self.assertIn("🔮", result)
         self.assertIn("═", result)  # Should have decorative borders
 
     def test_get_celtic_cross_text(self):
@@ -44,7 +41,6 @@ class TestTextFormatter(unittest.TestCase):
         self.assertIn(" 1.", result)  # Should have numbered positions
         self.assertIn("10.", result)  # Should have 10 positions
         self.assertIn("CELTIC CROSS", result)
-        self.assertIn("🔮", result)
 
     def test_get_random_cards_text(self):
         """Test random cards text formatting."""
@@ -52,7 +48,6 @@ class TestTextFormatter(unittest.TestCase):
         for num_cards in [1, 3, 5]:
             result = get_random_cards_text(num_cards)
             self.assertIsInstance(result, str)
-            self.assertIn("🔮", result)
             self.assertIn(f"{num_cards}-CARD RANDOM DRAW", result)
 
     def test_get_reading_summary_types(self):
@@ -63,7 +58,7 @@ class TestTextFormatter(unittest.TestCase):
         for reading_type in types:
             result = get_reading_summary(reading_type)
             self.assertIsInstance(result, str)
-            self.assertIn("🔮", result)  # Should have tarot emoji
+            self.assertIn("═", result)  # Should have decorative borders
             self.assertGreater(len(result), 50)  # Should be substantial text
 
     def test_reading_summary_fallback(self):
@@ -80,14 +75,14 @@ class TestTextFormatter(unittest.TestCase):
         self.assertIn("DAILY TAROT", result)
         self.assertIn("2026-01-01", result)
         self.assertIn(reading["name"], result)
-        self.assertIn("🎴", result)
+        self.assertIn("↳", result)
 
     def test_format_backward_compatibility(self):
         """Test that functions work without personal_seed parameter (backward compatibility)."""
         # Should work without personal_seed
         result = get_single_card_text()
         self.assertIsInstance(result, str)
-        self.assertIn("🎴", result)
+        self.assertIn("↳", result)
 
 
 if __name__ == "__main__":

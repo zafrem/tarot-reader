@@ -96,7 +96,7 @@ class TestPersonalSeeds(unittest.TestCase):
         text1 = get_single_card_text(seed)
         self.assertIsInstance(text1, str)
         self.assertGreater(len(text1), 0)
-        self.assertIn("🎴", text1)
+        self.assertIn("↳", text1)
 
         # Test three card text
         text2 = get_three_card_text(seed)

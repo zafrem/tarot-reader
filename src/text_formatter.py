@@ -19,7 +19,7 @@ def _format_card_for_display(card):
     orientation_text = (
         f" ({card['orientation']})" if card["orientation"] == "Reversed" else ""
     )
-    return f"🎴 {card['name']}{orientation_text}\n   ↳ {card['meaning']}"
+    return f"{card['name']}{orientation_text}\n   ↳ {card['meaning']}"
 
 
 def get_single_card_text(personal_seed=None) -> str:
@@ -50,13 +50,13 @@ def get_three_card_text(personal_seed=None) -> str:
     lines = []
 
     lines.append("═" * 50)
-    lines.append("🔮 THREE CARD SPREAD (Past • Present • Future)")
+    lines.append("THREE CARD SPREAD (Past • Present • Future)")
     if personal_seed:
-        lines.append(f"🎯 Personal Seed: {personal_seed}")
+        lines.append(f"Personal Seed: {personal_seed}")
     lines.append("═" * 50)
 
     for position, card in reading.items():
-        lines.append(f"\n📅 {position.upper()}:")
+        lines.append(f"\n{position.upper()}:")
         lines.append(_format_card_for_display(card))
 
     return "\n".join(lines)
@@ -76,9 +76,9 @@ def get_celtic_cross_text(personal_seed=None) -> str:
     lines = []
 
     lines.append("═" * 60)
-    lines.append("🔮 CELTIC CROSS SPREAD")
+    lines.append("CELTIC CROSS SPREAD")
     if personal_seed:
-        lines.append(f"🎯 Personal Seed: {personal_seed}")
+        lines.append(f"Personal Seed: {personal_seed}")
     lines.append("═" * 60)
 
     for i, (position, card) in enumerate(reading.items(), 1):
@@ -105,9 +105,9 @@ def get_random_cards_text(num_cards: int, personal_seed=None) -> str:
     lines = []
 
     lines.append("═" * 50)
-    lines.append(f"🔮 {num_cards}-CARD RANDOM DRAW")
+    lines.append(f"{num_cards}-CARD RANDOM DRAW")
     if personal_seed:
-        lines.append(f"🎯 Personal Seed: {personal_seed}")
+        lines.append(f"Personal Seed: {personal_seed}")
     lines.append("═" * 50)
 
     for i, card in enumerate(cards, 1):
@@ -131,7 +131,7 @@ def get_daily_reading_text(reading: dict) -> str:
     """
     lines = []
     lines.append("═" * 50)
-    lines.append(f"🔮 DAILY TAROT — {reading['date']}")
+    lines.append(f"DAILY TAROT — {reading['date']}")
     lines.append("═" * 50)
     lines.append(_format_card_for_display(reading))
     return "\n".join(lines)
@@ -150,24 +150,24 @@ def get_reading_summary(reading_type: str = "single", personal_seed=None) -> str
     """
     if reading_type == "single":
         card_text = get_single_card_text(personal_seed)
-        header = "╔══════════════════════════════════════════════════╗\n║              🔮 DAILY CARD READING               ║\n"
+        header = "╔══════════════════════════════════════════════════╗\n║                DAILY CARD READING                ║\n"
         if personal_seed:
-            header += f"║           🎯 Seed: {personal_seed[:30]:<30} ║\n"
+            header += f"║       Seed: {personal_seed[:30]:<30}       ║\n"
         header += "╚══════════════════════════════════════════════════╝"
-        return f"{header}\n\n{card_text}\n\n💫 This card represents your current energy and guidance for today."
+        return f"{header}\n\n{card_text}\n\nThis card represents your current energy and guidance for today."
 
     elif reading_type == "three":
         cards_text = get_three_card_text(personal_seed)
-        return f"{cards_text}\n\n💫 This spread shows the flow of time and how past influences\n   shape your present and future path."
+        return f"{cards_text}\n\nThis spread shows the flow of time and how past influences\n   shape your present and future path."
 
     elif reading_type == "celtic":
         cards_text = get_celtic_cross_text(personal_seed)
-        return f"{cards_text}\n\n💫 This comprehensive spread provides deep insight into your\n   situation, challenges, and potential outcomes."
+        return f"{cards_text}\n\nThis comprehensive spread provides deep insight into your\n   situation, challenges, and potential outcomes."
 
     else:
         try:
             num_cards = int(reading_type)
             cards_text = get_random_cards_text(num_cards, personal_seed)
-            return f"{cards_text}\n\n💫 These cards offer guidance and insight for your current journey."
+            return f"{cards_text}\n\nThese cards offer guidance and insight for your current journey."
         except ValueError:
             return get_single_card_text(personal_seed)
