@@ -9,6 +9,9 @@ include = ["src*", "api*"]
 [tool.setuptools]
 license-files = ["LICENSE", "LICENSE.*", "COPYING*", "LICENCE*"]
 
+[tool.setuptools.package-data]
+src = ["data/*.json", "data/*.md", "data/images/*.jpg"]
+
 [project]
 name = "tarot-reader"
 version = "0.0.5"

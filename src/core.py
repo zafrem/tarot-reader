@@ -83,6 +83,7 @@ def random_drop(num_cards: int = 1) -> List[Dict[str, Any]]:
             "orientation": "Reversed" if is_reversed else "Upright",
             "meaning": card["reversed"] if is_reversed else card["upright"],
             "draw_time": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
+            "image": card["image"],
         }
 
         # Add number for Major Arcana cards
@@ -135,6 +136,7 @@ def _draw_cards(
             "name": card["name"],
             "orientation": "Reversed" if is_reversed else "Upright",
             "meaning": card["reversed"] if is_reversed else card["upright"],
+            "image": card["image"],
         }
 
         # Add number for Major Arcana cards
