@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="300" height="450">
+  <rect width="300" height="450" fill="#2b2140"/>
+
+  <!-- sun / new beginning -->
+  <circle cx="150" cy="130" r="42" fill="none" stroke="#f4c95d" stroke-width="4"/>
+
+  <!-- path stepping off the edge -->
+  <path d="M 90 260 Q 150 220 210 260" fill="none" stroke="#f4c95d" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round"/>
+
+  <!-- the step: a simple figure at the cliff edge -->
+  <circle cx="150" cy="245" r="10" fill="#f4c95d"/>
+  <line x1="150" y1="255" x2="150" y2="300" stroke="#f4c95d" stroke-width="4" stroke-linecap="round"/>
+  <line x1="150" y1="300" x2="130" y2="330" stroke="#f4c95d" stroke-width="4" stroke-linecap="round"/>
+  <line x1="150" y1="300" x2="172" y2="322" stroke="#f4c95d" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- cliff edge -->
+  <path d="M 0 340 L 300 340" stroke="#463a63" stroke-width="2"/>
+  <path d="M 0 340 L 40 360 L 0 380 Z" fill="#463a63"/>
+
+  <text x="150" y="405" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#f4f0e6">The Fool</text>
+  <text x="150" y="425" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="2" fill="#8a7fae">0 · MAJOR ARCANA</text>
+</svg>
