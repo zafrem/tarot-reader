@@ -117,6 +117,26 @@ def get_random_cards_text(num_cards: int, personal_seed=None) -> str:
     return "\n".join(lines)
 
 
+def get_daily_reading_text(reading: dict) -> str:
+    """
+    Format an already-computed daily reading as a terminal display string.
+
+    Args:
+        reading: A reading dict as returned by core.daily_reading or
+                 history.record_daily_reading (has date, name, orientation,
+                 meaning, image)
+
+    Returns:
+        Formatted string for terminal display
+    """
+    lines = []
+    lines.append("═" * 50)
+    lines.append(f"🔮 DAILY TAROT — {reading['date']}")
+    lines.append("═" * 50)
+    lines.append(_format_card_for_display(reading))
+    return "\n".join(lines)
+
+
 def get_reading_summary(reading_type: str = "single", personal_seed=None) -> str:
     """
     Get a complete tarot reading with context for terminal display.

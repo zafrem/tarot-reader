@@ -35,6 +35,28 @@ def _create_personal_seed(personal_info: str) -> int:
     return seed
 
 
+def _create_daily_seed(date_str: str, personal_seed: Optional[str] = None) -> int:
+    """
+    Create a deterministic seed for a given calendar day.
+
+    Unlike _create_personal_seed, this has no time-of-day component, so the
+    same date (and personal_seed) always produces the same seed.
+
+    Args:
+        date_str: ISO date string, e.g. "2026-09-23"
+        personal_seed: Optional personal information to seed the draw
+
+    Returns:
+        Integer seed for random number generation
+    """
+    material = date_str
+    if personal_seed:
+        material += personal_seed.lower().strip()
+
+    hash_object = hashlib.md5(material.encode())
+    return int(hash_object.hexdigest()[:8], 16)
+
+
 def _create_time_seed() -> int:
     """
     Create a seed based on current time for truly random drops.
@@ -181,6 +203,50 @@ def draw_three(personal_seed: Optional[str] = None) -> Dict[str, Dict[str, Any]]
     cards = _draw_cards(3, personal_seed)
 
     return {"Past": cards[0], "Present": cards[1], "Future": cards[2]}
+
+
+def daily_reading(
+    personal_seed: Optional[str] = None, date: Optional[str] = None
+) -> Dict[str, Any]:
+    """
+    Get the tarot card for a given day.
+
+    Deterministic: the same date (and personal_seed, if given) always
+    returns the same card, unlike the other draw functions in this module
+    which are intentionally time-influenced. Without a personal_seed,
+    everyone requesting the same date gets the same card.
+
+    Args:
+        personal_seed: Optional personal information for a personalized
+                      (but still repeatable-per-day) card
+        date: Optional ISO date string (e.g. "2026-09-23"); defaults to
+              today in local time
+
+    Returns:
+        Dictionary with date, name, orientation, meaning, and image
+    """
+    day = date or time.strftime("%Y-%m-%d")
+    seed = _create_daily_seed(day, personal_seed)
+
+    # A local Random instance, not the global random module, so this never
+    # perturbs global random state the way the seeded/time-seeded paths do.
+    rng = random.Random(seed)
+    all_cards = get_all_cards()
+    card = rng.choice(all_cards)
+    is_reversed = rng.choice([True, False])
+
+    result = {
+        "date": day,
+        "name": card["name"],
+        "orientation": "Reversed" if is_reversed else "Upright",
+        "meaning": card["reversed"] if is_reversed else card["upright"],
+        "image": card["image"],
+    }
+
+    if "number" in card:
+        result["number"] = card["number"]
+
+    return result
 
 
 def celtic_cross(personal_seed: Optional[str] = None) -> Dict[str, Dict[str, Any]]:

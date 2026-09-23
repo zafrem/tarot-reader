@@ -74,7 +74,8 @@ You will be presented with a main menu with the following options:
 
 1.  **Search for a card**: Look up a specific card by name, number, or alias.
 2.  **Shuffle cards for a reading**: Start a classic tarot reading session.
-3.  **Exit**: Close the CLI.
+3.  **Today's Tarot Card**: Get today's card (optionally personalized with a seed) and save it to your local history.
+4.  **Exit**: Close the CLI.
 
 ### Card Search
 
@@ -112,6 +113,22 @@ Enter your search query: s1
 ### Tarot Reading
 
 This option will start the original tarot reading flow, where you can get a single card, a three-card spread, or a creative elements reading. You can also provide a personal seed for a more personalized experience.
+
+### Daily Tarot
+
+Unlike the other readings, which are time-influenced and different every time, Daily Tarot is deterministic: the same calendar day (and seed, if you provide one) always returns the same card. Every reading is saved to a local history file (`~/.tarot-reader/history.json` by default, overridable via the `TAROT_READER_HOME` environment variable).
+
+```python
+from src import daily_reading, record_daily_reading, get_daily_history
+
+# Pure computation, no save
+today = daily_reading()                    # same card for everyone today
+mine = daily_reading("INFP")               # personalized, still repeatable today
+
+# Compute and save to local history
+reading = record_daily_reading("INFP")
+history = get_daily_history()              # all saved readings, oldest first
+```
 
 #### Personal Context (Time-Influenced Randomness)
 ```python
@@ -226,10 +243,15 @@ themed = get_reading_summary("single", "morning meditation")
 
 #### Core Functions
 ```python
-# Basic tarot functions
+# Basic tarot functions (time-influenced randomness)
 draw_single(personal_seed=None) -> Dict
 draw_three(personal_seed=None) -> Dict
 celtic_cross(personal_seed=None) -> Dict
+
+# Daily Tarot (deterministic per calendar day, not time-influenced)
+daily_reading(personal_seed=None, date=None) -> Dict
+record_daily_reading(personal_seed=None, path=None) -> Dict  # computes + saves to local history
+get_daily_history(path=None) -> List[Dict]                   # saved readings, oldest first
 
 # Text formatter functions
 get_single_card_text(personal_seed=None) -> str
@@ -237,14 +259,16 @@ get_three_card_text(personal_seed=None) -> str
 get_celtic_cross_text(personal_seed=None) -> str
 get_random_cards_text(num_cards, personal_seed=None) -> str
 get_reading_summary(reading_type="single", personal_seed=None) -> str
+get_daily_reading_text(reading) -> str
 ```
 
 **Parameters:**
 - `personal_seed`: Any string for personal context (MBTI, questions, themes, etc.)
 - `reading_type`: "single", "three", "celtic", or number as string
 - `num_cards`: Integer 1-78 for random card draws
+- `date`: Optional ISO date string (`"YYYY-MM-DD"`) for `daily_reading`; defaults to today
 
-**Note:** All functions now include time-based randomness, so identical inputs will produce different results each time.
+**Note:** `draw_single`/`draw_three`/`celtic_cross`/`random_drop` include time-based randomness, so identical inputs produce different results each time. `daily_reading` (and `record_daily_reading`) is the exception: the same date and seed always return the same card.
 
 ### REST API
 
@@ -305,6 +329,24 @@ curl "http://localhost:8000/api/v1/readings/celtic-cross"
 # Random drop (1-78 cards)
 GET /api/v1/readings/random?count=5
 curl "http://localhost:8000/api/v1/readings/random?count=5"
+```
+
+**Daily Tarot Endpoints:**
+
+Deterministic per calendar date, unlike the reading endpoints above. Without `?seed=`, everyone gets the same card for the day, and it's saved to the server's public daily-card history. With `?seed=`, you get a personalized-but-repeatable-for-the-day card, computed on the fly but *not* saved server-side (there are no accounts, so there's no per-caller place to save it — persist it client-side if you want to keep it).
+
+```bash
+# Today's shared card (saved to server-side history)
+GET /api/v1/daily
+curl "http://localhost:8000/api/v1/daily"
+
+# Today's personalized card (not saved server-side)
+GET /api/v1/daily?seed=INFP
+curl "http://localhost:8000/api/v1/daily?seed=INFP"
+
+# History of past shared daily cards
+GET /api/v1/daily/history
+curl "http://localhost:8000/api/v1/daily/history"
 ```
 
 **Card Information Endpoints:**

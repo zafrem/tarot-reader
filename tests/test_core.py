@@ -4,7 +4,16 @@ Test cases for the core tarot reading functionality.
 
 import unittest
 from unittest.mock import patch
-from src.core import draw_single, draw_three, celtic_cross, _draw_cards, random_drop, _create_time_seed
+from src.core import (
+    draw_single,
+    draw_three,
+    celtic_cross,
+    _draw_cards,
+    random_drop,
+    _create_time_seed,
+    daily_reading,
+    _create_daily_seed,
+)
 
 
 class TestCore(unittest.TestCase):
@@ -212,10 +221,8 @@ class TestCore(unittest.TestCase):
         """Test that Major Arcana cards in random_drop include numbers."""
         # Draw multiple cards to increase chance of getting Major Arcana
         result = random_drop(20)
-        major_arcana_found = False
         for card in result:
             if "number" in card:
-                major_arcana_found = True
                 self.assertIsInstance(card["number"], int)
                 self.assertGreaterEqual(card["number"], 0)
                 self.assertLessEqual(card["number"], 21)
@@ -237,11 +244,58 @@ class TestCore(unittest.TestCase):
     def test_create_time_seed_changes_over_time(self):
         """Test that _create_time_seed produces different values."""
         import time
+
         seed1 = _create_time_seed()
         time.sleep(0.01)  # Small delay
         seed2 = _create_time_seed()
         # Seeds should be different due to time change
         self.assertNotEqual(seed1, seed2)
+
+
+class TestDailyReading(unittest.TestCase):
+    def test_returns_expected_structure(self):
+        """Test that daily_reading returns a dict with all expected keys."""
+        reading = daily_reading(date="2026-01-01")
+        self.assertIsInstance(reading, dict)
+        for key in ("date", "name", "orientation", "meaning", "image"):
+            self.assertIn(key, reading)
+        self.assertEqual(reading["date"], "2026-01-01")
+        self.assertIn(reading["orientation"], ["Upright", "Reversed"])
+
+    def test_same_date_is_deterministic(self):
+        """Test that the same date (and seed) always returns the same card."""
+        reading1 = daily_reading(date="2026-03-14")
+        reading2 = daily_reading(date="2026-03-14")
+        self.assertEqual(reading1, reading2)
+
+        seeded1 = daily_reading(personal_seed="INFP", date="2026-03-14")
+        seeded2 = daily_reading(personal_seed="INFP", date="2026-03-14")
+        self.assertEqual(seeded1, seeded2)
+
+    def test_different_dates_produce_variety(self):
+        """Test that drawing across many dates doesn't always return the same card."""
+        readings = [daily_reading(date=f"2026-01-{day:02d}") for day in range(1, 29)]
+        distinct = {(r["name"], r["orientation"]) for r in readings}
+        self.assertGreater(len(distinct), 1)
+
+    def test_defaults_to_today(self):
+        """Test that omitting date uses today's date."""
+        import time
+
+        reading = daily_reading()
+        self.assertEqual(reading["date"], time.strftime("%Y-%m-%d"))
+
+    def test_daily_seed_varies_by_personal_seed(self):
+        """Test that a personal seed changes the seed for the same date."""
+        base = _create_daily_seed("2026-03-14")
+        seeded = _create_daily_seed("2026-03-14", "INFP")
+        self.assertNotEqual(base, seeded)
+
+    def test_daily_seed_is_deterministic(self):
+        """Test that _create_daily_seed has no time component."""
+        seed1 = _create_daily_seed("2026-03-14", "INFP")
+        seed2 = _create_daily_seed("2026-03-14", "INFP")
+        self.assertEqual(seed1, seed2)
 
 
 if __name__ == "__main__":

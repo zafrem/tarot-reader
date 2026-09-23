@@ -2,10 +2,10 @@
 Test cases for the CLI functionality.
 """
 
+import os
+import tempfile
 import unittest
-from unittest.mock import patch, MagicMock
-import sys
-from io import StringIO
+from unittest.mock import patch
 
 
 class TestCLI(unittest.TestCase):
@@ -108,6 +108,32 @@ class TestCLI(unittest.TestCase):
 
                 main()
                 mock_print.assert_called_once()
+
+    def test_main_daily_reading(self):
+        """Test CLI with daily reading type, saved to an isolated history file."""
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.dict(os.environ, {"TAROT_READER_HOME": tmp}):
+                with patch("sys.argv", ["tarot-reader", "--type", "daily"]):
+                    with patch("builtins.print") as mock_print:
+                        from src.__main__ import main
+
+                        main()
+                        mock_print.assert_called_once()
+                        output = mock_print.call_args[0][0]
+                        self.assertIsInstance(output, str)
+                        self.assertIn("DAILY TAROT", output)
+                self.assertTrue(os.path.exists(os.path.join(tmp, "history.json")))
+
+    def test_main_daily_reading_with_seed(self):
+        """Test CLI with daily reading type and a personal seed."""
+        with tempfile.TemporaryDirectory() as tmp:
+            with patch.dict(os.environ, {"TAROT_READER_HOME": tmp}):
+                with patch("sys.argv", ["tarot-reader", "-t", "daily", "-s", "INFP"]):
+                    with patch("builtins.print") as mock_print:
+                        from src.__main__ import main
+
+                        main()
+                        mock_print.assert_called_once()
 
     def test_main_invalid_type(self):
         """Test CLI with invalid reading type."""

@@ -8,7 +8,9 @@ from .text_formatter import (
     get_single_card_text,
     get_three_card_text,
     get_celtic_cross_text,
+    get_daily_reading_text,
 )
+from .history import record_daily_reading
 
 
 def main():
@@ -23,7 +25,7 @@ def main():
     parser.add_argument(
         "--type",
         "-t",
-        choices=["single", "three", "celtic"],
+        choices=["single", "three", "celtic", "daily"],
         default="single",
         help="Type of reading (default: single)",
     )
@@ -43,6 +45,9 @@ def main():
         result = get_three_card_text(args.seed)
     elif args.type == "celtic":
         result = get_celtic_cross_text(args.seed)
+    elif args.type == "daily":
+        reading = record_daily_reading(args.seed)
+        result = get_daily_reading_text(reading)
 
     print(result)
 

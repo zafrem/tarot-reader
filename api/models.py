@@ -97,6 +97,26 @@ class CardDetailResponse(BaseModel):
         }
 
 
+class DailyReadingResponse(BaseModel):
+    """Response model for a daily tarot reading."""
+
+    date: str = Field(..., description="ISO date (YYYY-MM-DD) this reading is for")
+    card: CardResponse = Field(..., description="The card drawn for this day")
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "date": "2026-09-23",
+                "card": {
+                    "name": "The Star",
+                    "orientation": "upright",
+                    "meaning": "Hope, faith, purpose, renewal, spirituality",
+                    "position": None,
+                },
+            }
+        }
+
+
 class HealthCheckResponse(BaseModel):
     """Response model for health check endpoint."""
 

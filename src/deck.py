@@ -9,6 +9,7 @@ data/images/ directory directly without depending on this module.
 
 import json
 from pathlib import Path
+from typing import Any, Dict, List
 
 DATA_DIR = Path(__file__).parent / "data"
 IMAGES_DIR = DATA_DIR / "images"
@@ -28,7 +29,7 @@ MAJOR_ARCANA = [
     if c["arcana"] == "major"
 ]
 
-MINOR_ARCANA = {}
+MINOR_ARCANA: Dict[str, List[Dict[str, Any]]] = {}
 for _c in _RAW_CARDS:
     if _c["arcana"] == "minor":
         MINOR_ARCANA.setdefault(_c["suit"], []).append(

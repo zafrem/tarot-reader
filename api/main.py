@@ -8,7 +8,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from api.routers import readings, cards
+from api.routers import readings, cards, daily
 from api.models import HealthCheckResponse
 
 # Create FastAPI app with metadata
@@ -65,6 +65,7 @@ app.add_middleware(
 # Include routers
 app.include_router(readings.router)
 app.include_router(cards.router)
+app.include_router(daily.router)
 
 
 @app.get("/", response_model=dict)
@@ -86,6 +87,10 @@ async def root():
                 "three_card": "/api/v1/readings/three",
                 "celtic_cross": "/api/v1/readings/celtic-cross",
                 "random": "/api/v1/readings/random?count=5",
+            },
+            "daily": {
+                "today": "/api/v1/daily",
+                "history": "/api/v1/daily/history",
             },
             "cards": {
                 "deck_info": "/api/v1/cards/deck-info",

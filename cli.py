@@ -69,6 +69,16 @@ def search_mode():
                 print(f"⬇️ Reversed: {card['reversed']}")
                 print("=" * 60)
 
+def daily_tarot_mode():
+    """Show today's Tarot card and save it to your local history."""
+    seed_input = input(
+        "\nEnter a personal seed for a personalized daily card, "
+        "or press Enter for the shared card of the day: "
+    ).strip()
+    reading = record_daily_reading(seed_input if seed_input else None)
+    print("\n" + get_daily_reading_text(reading))
+    print("\n💾 Saved to your local history (~/.tarot-reader/history.json).")
+
 def reading_mode():
     """Perform a tarot reading."""
     # Get user information
@@ -121,10 +131,11 @@ def main():
         print("\nChoose an option:")
         print("1. Search for a card")
         print("2. Shuffle cards for a reading")
-        print("3. Exit")
-        
-        choice = input("\nEnter your choice (1-3): ").strip()
-        
+        print("3. Today's Tarot Card")
+        print("4. Exit")
+
+        choice = input("\nEnter your choice (1-4): ").strip()
+
         if choice == '1':
             search_mode()
         elif choice == '2':
@@ -133,9 +144,11 @@ def main():
             # For now, let's just print the exit message.
             break
         elif choice == '3':
+            daily_tarot_mode()
+        elif choice == '4':
             break
         else:
-            print("Invalid choice. Please enter a number between 1 and 3.")
+            print("Invalid choice. Please enter a number between 1 and 4.")
 
     print("\n" + "=" * 60)
     print("✨ Thank you for using Tarot Reader CLI! ✨")

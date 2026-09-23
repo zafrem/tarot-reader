@@ -9,7 +9,9 @@ from src.text_formatter import (
     get_celtic_cross_text,
     get_random_cards_text,
     get_reading_summary,
+    get_daily_reading_text,
 )
+from src.core import daily_reading
 
 
 class TestTextFormatter(unittest.TestCase):
@@ -69,6 +71,16 @@ class TestTextFormatter(unittest.TestCase):
         result = get_reading_summary("invalid_type")
         self.assertIsInstance(result, str)
         self.assertGreater(len(result), 0)
+
+    def test_get_daily_reading_text(self):
+        """Test daily reading text formatting."""
+        reading = daily_reading(date="2026-01-01")
+        result = get_daily_reading_text(reading)
+        self.assertIsInstance(result, str)
+        self.assertIn("DAILY TAROT", result)
+        self.assertIn("2026-01-01", result)
+        self.assertIn(reading["name"], result)
+        self.assertIn("🎴", result)
 
     def test_format_backward_compatibility(self):
         """Test that functions work without personal_seed parameter (backward compatibility)."""
