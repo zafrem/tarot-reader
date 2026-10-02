@@ -1865,6 +1865,23 @@
     "images": {
       "default": "images/default/ace_of_pentacles.jpg",
       "abstraction": "images/abstraction/ace_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 에이스",
+        "upright": "새로운 재정적 또는 직업적 기회, 현실화, 풍요",
+        "reversed": "놓친 기회, 계획과 예지력 부족"
+      },
+      "ja": {
+        "name": "ペンタクルのエース",
+        "upright": "新しい金銭的または仕事上の機会、顕在化、豊かさ",
+        "reversed": "逃した機会、計画性と先見性の欠如"
+      },
+      "zh": {
+        "name": "星币A",
+        "upright": "新的财务或职业机会、显化、富足",
+        "reversed": "错失的机会、缺乏规划和远见"
+      }
     }
   },
   {
@@ -1877,6 +1894,23 @@
     "images": {
       "default": "images/default/two_of_pentacles.jpg",
       "abstraction": "images/abstraction/two_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 2",
+        "upright": "다중 우선순위, 시간 관리, 우선순위 설정, 적응력",
+        "reversed": "과부하, 무질서, 우선순위 재조정"
+      },
+      "ja": {
+        "name": "ペンタクルの2",
+        "upright": "複数の優先事項、時間管理、優先順位付け、適応力",
+        "reversed": "過負荷、混乱、優先順位の見直し"
+      },
+      "zh": {
+        "name": "星币2",
+        "upright": "多重优先事项、时间管理、排序、适应力",
+        "reversed": "负担过重、混乱无序、重新排序"
+      }
     }
   },
   {
@@ -1889,6 +1923,23 @@
     "images": {
       "default": "images/default/three_of_pentacles.jpg",
       "abstraction": "images/abstraction/three_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 3",
+        "upright": "협업, 배움, 실행",
+        "reversed": "불협화음, 불일치, 혼자 일하기"
+      },
+      "ja": {
+        "name": "ペンタクルの3",
+        "upright": "協力、学び、実行",
+        "reversed": "不調和、不一致、一人で働くこと"
+      },
+      "zh": {
+        "name": "星币3",
+        "upright": "协作、学习、执行",
+        "reversed": "不和谐、意见不合、独自工作"
+      }
     }
   },
   {
@@ -1901,6 +1952,23 @@
     "images": {
       "default": "images/default/four_of_pentacles.jpg",
       "abstraction": "images/abstraction/four_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 4",
+        "upright": "저축, 안정, 보수성, 결핍, 통제",
+        "reversed": "과소비, 탐욕, 자기 방어"
+      },
+      "ja": {
+        "name": "ペンタクルの4",
+        "upright": "貯蓄、安定、保守性、欠乏、コントロール",
+        "reversed": "浪費、強欲、自己防衛"
+      },
+      "zh": {
+        "name": "星币4",
+        "upright": "储蓄、安全感、保守、匮乏、控制",
+        "reversed": "过度消费、贪婪、自我保护"
+      }
     }
   },
   {
@@ -1913,6 +1981,23 @@
     "images": {
       "default": "images/default/five_of_pentacles.jpg",
       "abstraction": "images/abstraction/five_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 5",
+        "upright": "재정적 손실, 빈곤, 결핍 사고방식, 고립, 불안",
+        "reversed": "재정적 손실로부터의 회복, 영적 빈곤"
+      },
+      "ja": {
+        "name": "ペンタクルの5",
+        "upright": "金銭的損失、貧困、欠乏意識、孤立、不安",
+        "reversed": "金銭的損失からの回復、精神的貧困"
+      },
+      "zh": {
+        "name": "星币5",
+        "upright": "经济损失、贫困、匮乏心态、孤立、忧虑",
+        "reversed": "从经济损失中恢复、精神上的贫乏"
+      }
     }
   },
   {
@@ -1925,6 +2010,23 @@
     "images": {
       "default": "images/default/six_of_pentacles.jpg",
       "abstraction": "images/abstraction/six_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 6",
+        "upright": "주기, 받기, 부의 나눔, 관대함, 자선",
+        "reversed": "자기 돌봄, 갚지 않은 빚, 일방적인 자선"
+      },
+      "ja": {
+        "name": "ペンタクルの6",
+        "upright": "与えること、受け取ること、富の分かち合い、寛大さ、慈善",
+        "reversed": "セルフケア、未払いの借り、一方的な施し"
+      },
+      "zh": {
+        "name": "星币6",
+        "upright": "给予、接受、分享财富、慷慨、慈善",
+        "reversed": "自我关怀、未偿还的债务、一方的施舍"
+      }
     }
   },
   {
@@ -1937,6 +2039,23 @@
     "images": {
       "default": "images/default/seven_of_pentacles.jpg",
       "abstraction": "images/abstraction/seven_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 7",
+        "upright": "수확, 보상, 결실, 성장, 진전, 인내, 끈기",
+        "reversed": "보상 부족, 조급함, 성장 정체"
+      },
+      "ja": {
+        "name": "ペンタクルの7",
+        "upright": "収穫、報酬、結果、成長、進歩、忍耐、辛抱強さ",
+        "reversed": "報酬の欠如、焦り、成長の停滞"
+      },
+      "zh": {
+        "name": "星币7",
+        "upright": "收获、回报、成果、成长、进步、坚持、耐心",
+        "reversed": "缺乏回报、缺乏耐心、停滞不前"
+      }
     }
   },
   {
@@ -1949,6 +2068,23 @@
     "images": {
       "default": "images/default/eight_of_pentacles.jpg",
       "abstraction": "images/abstraction/eight_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 8",
+        "upright": "수련, 반복적인 작업, 숙련, 기술 개발",
+        "reversed": "완벽주의, 잘못된 방향의 노력, 기술 개발"
+      },
+      "ja": {
+        "name": "ペンタクルの8",
+        "upright": "見習い、反復的な作業、熟練、スキルの向上",
+        "reversed": "完璧主義、見当違いな努力、スキルの向上"
+      },
+      "zh": {
+        "name": "星币8",
+        "upright": "学徒、重复性工作、精通、技能提升",
+        "reversed": "完美主义、方向错误的努力、技能提升"
+      }
     }
   },
   {
@@ -1961,6 +2097,23 @@
     "images": {
       "default": "images/default/nine_of_pentacles.jpg",
       "abstraction": "images/abstraction/nine_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 9",
+        "upright": "풍요, 사치, 자립, 재정적 독립",
+        "reversed": "자존감, 일에 대한 과도한 투자, 혹사"
+      },
+      "ja": {
+        "name": "ペンタクルの9",
+        "upright": "豊かさ、贅沢、自立、経済的自立",
+        "reversed": "自己価値、仕事への過度な投資、酷使"
+      },
+      "zh": {
+        "name": "星币9",
+        "upright": "富足、奢华、自给自足、经济独立",
+        "reversed": "自我价值、过度投入工作、过度操劳"
+      }
     }
   },
   {
@@ -1973,6 +2126,23 @@
     "images": {
       "default": "images/default/ten_of_pentacles.jpg",
       "abstraction": "images/abstraction/ten_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 10",
+        "upright": "부, 재정적 안정, 가족, 장기적 성공, 기여",
+        "reversed": "부의 어두운 면, 재정적 실패 또는 손실"
+      },
+      "ja": {
+        "name": "ペンタクルの10",
+        "upright": "富、経済的安定、家族、長期的な成功、貢献",
+        "reversed": "富の暗い側面、経済的な失敗または損失"
+      },
+      "zh": {
+        "name": "星币10",
+        "upright": "财富、经济保障、家庭、长期成功、贡献",
+        "reversed": "财富的阴暗面、经济失败或损失"
+      }
     }
   },
   {
@@ -1985,6 +2155,23 @@
     "images": {
       "default": "images/default/page_of_pentacles.jpg",
       "abstraction": "images/abstraction/page_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 시종",
+        "upright": "현실화, 재정적 기회, 기술 개발",
+        "reversed": "진전 부족, 미루기, 실패로부터 배움"
+      },
+      "ja": {
+        "name": "ペンタクルのペイジ",
+        "upright": "顕在化、金銭的な機会、スキルの向上",
+        "reversed": "進展の欠如、先延ばし、失敗から学ぶこと"
+      },
+      "zh": {
+        "name": "星币侍从",
+        "upright": "显化、财务机会、技能提升",
+        "reversed": "缺乏进展、拖延、从失败中学习"
+      }
     }
   },
   {
@@ -1997,6 +2184,23 @@
     "images": {
       "default": "images/default/knight_of_pentacles.jpg",
       "abstraction": "images/abstraction/knight_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 기사",
+        "upright": "노력, 생산성, 루틴, 보수성",
+        "reversed": "자기 절제, 지루함, 좌절, 장애물"
+      },
+      "ja": {
+        "name": "ペンタクルのナイト",
+        "upright": "勤勉、生産性、日課、保守性",
+        "reversed": "自制心、退屈、苛立ち、障害"
+      },
+      "zh": {
+        "name": "星币骑士",
+        "upright": "勤奋、生产力、常规、保守",
+        "reversed": "自律、无聊、沮丧、障碍"
+      }
     }
   },
   {
@@ -2009,6 +2213,23 @@
     "images": {
       "default": "images/default/queen_of_pentacles.jpg",
       "abstraction": "images/abstraction/queen_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 여왕",
+        "upright": "양육, 실용성, 재정적 부양, 일하는 부모",
+        "reversed": "재정적 독립, 자기 돌봄, 일과 가정의 갈등"
+      },
+      "ja": {
+        "name": "ペンタクルのクイーン",
+        "upright": "養育、実用性、経済的な扶養、働く親",
+        "reversed": "経済的自立、セルフケア、仕事と家庭の両立の葛藤"
+      },
+      "zh": {
+        "name": "星币王后",
+        "upright": "养育、务实、经济上的支持、职场父母",
+        "reversed": "经济独立、自我关怀、工作与家庭的冲突"
+      }
     }
   },
   {
@@ -2021,6 +2242,23 @@
     "images": {
       "default": "images/default/king_of_pentacles.jpg",
       "abstraction": "images/abstraction/king_of_pentacles.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "펜타클 왕",
+        "upright": "재정적 풍요, 사업, 리더십, 안정, 절제, 풍요",
+        "reversed": "재정에 무능함, 부와 지위에 대한 집착, 고집"
+      },
+      "ja": {
+        "name": "ペンタクルのキング",
+        "upright": "経済的な豊かさ、ビジネス、リーダーシップ、安定、規律、豊かさ",
+        "reversed": "金銭管理の無能さ、富と地位への執着、頑固さ"
+      },
+      "zh": {
+        "name": "星币国王",
+        "upright": "财务富足、商业、领导力、安全感、自律、富足",
+        "reversed": "不善理财、执迷于财富和地位、固执"
+      }
     }
   }
 ]
