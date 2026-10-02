@@ -1459,6 +1459,23 @@
     "images": {
       "default": "images/default/ace_of_swords.jpg",
       "abstraction": "images/abstraction/ace_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 에이스",
+        "upright": "돌파구, 새로운 아이디어, 정신적 명료함, 성공",
+        "reversed": "내적 명료함, 아이디어 재고, 흐려진 판단력"
+      },
+      "ja": {
+        "name": "ソードのエース",
+        "upright": "突破、新しいアイデア、精神的な明晰さ、成功",
+        "reversed": "内なる明晰さ、アイデアの再考、曇った判断力"
+      },
+      "zh": {
+        "name": "宝剑A",
+        "upright": "突破、新想法、思维清晰、成功",
+        "reversed": "内在清晰、重新思考想法、判断力模糊"
+      }
     }
   },
   {
@@ -1471,6 +1488,23 @@
     "images": {
       "default": "images/default/two_of_swords.jpg",
       "abstraction": "images/abstraction/two_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 2",
+        "upright": "어려운 결정, 선택지 저울질, 교착 상태, 회피",
+        "reversed": "우유부단, 혼란, 정보 과부하, 교착 상태"
+      },
+      "ja": {
+        "name": "ソードの2",
+        "upright": "難しい決断、選択肢を比較検討すること、行き詰まり、回避",
+        "reversed": "優柔不断、混乱、情報過多、膠着状態"
+      },
+      "zh": {
+        "name": "宝剑2",
+        "upright": "艰难的决定、权衡选择、僵局、逃避",
+        "reversed": "犹豫不决、困惑、信息过载、僵持"
+      }
     }
   },
   {
@@ -1483,6 +1517,23 @@
     "images": {
       "default": "images/default/three_of_swords.jpg",
       "abstraction": "images/abstraction/three_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 3",
+        "upright": "상심, 정서적 고통, 슬픔, 비탄, 상처",
+        "reversed": "부정적인 자기 대화, 고통 해소, 낙관, 용서"
+      },
+      "ja": {
+        "name": "ソードの3",
+        "upright": "心痛、感情的な苦痛、悲しみ、悲嘆、傷",
+        "reversed": "否定的な自己対話、痛みの解放、楽観、許し"
+      },
+      "zh": {
+        "name": "宝剑3",
+        "upright": "心碎、情感痛苦、悲伤、哀痛、创伤",
+        "reversed": "消极的自我对话、释放痛苦、乐观、宽恕"
+      }
     }
   },
   {
@@ -1495,6 +1546,23 @@
     "images": {
       "default": "images/default/four_of_swords.jpg",
       "abstraction": "images/abstraction/four_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 4",
+        "upright": "휴식, 이완, 명상, 사색, 회복",
+        "reversed": "탈진, 번아웃, 깊은 사색, 정체"
+      },
+      "ja": {
+        "name": "ソードの4",
+        "upright": "休息、リラックス、瞑想、熟考、回復",
+        "reversed": "疲労困憊、燃え尽き、深い熟考、停滞"
+      },
+      "zh": {
+        "name": "宝剑4",
+        "upright": "休息、放松、冥想、沉思、恢复",
+        "reversed": "精疲力竭、倦怠、深度沉思、停滞"
+      }
     }
   },
   {
@@ -1507,6 +1575,23 @@
     "images": {
       "default": "images/default/five_of_swords.jpg",
       "abstraction": "images/abstraction/five_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 5",
+        "upright": "갈등, 의견 충돌, 경쟁, 패배, 수단과 방법을 가리지 않는 승리",
+        "reversed": "화해, 보상, 과거의 원한"
+      },
+      "ja": {
+        "name": "ソードの5",
+        "upright": "対立、意見の不一致、競争、敗北、手段を選ばない勝利",
+        "reversed": "和解、埋め合わせ、過去の恨み"
+      },
+      "zh": {
+        "name": "宝剑5",
+        "upright": "冲突、分歧、竞争、失败、不择手段的胜利",
+        "reversed": "和解、弥补、过去的怨恨"
+      }
     }
   },
   {
@@ -1519,6 +1604,23 @@
     "images": {
       "default": "images/default/six_of_swords.jpg",
       "abstraction": "images/abstraction/six_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 6",
+        "upright": "전환, 변화, 통과의례, 짐 내려놓기",
+        "reversed": "개인적 전환, 변화에 대한 저항, 끝내지 못한 일"
+      },
+      "ja": {
+        "name": "ソードの6",
+        "upright": "移行、変化、通過儀礼、荷物を手放すこと",
+        "reversed": "個人的な移行、変化への抵抗、未解決の問題"
+      },
+      "zh": {
+        "name": "宝剑6",
+        "upright": "过渡、改变、成长仪式、放下包袱",
+        "reversed": "个人转变、抗拒改变、未了之事"
+      }
     }
   },
   {
@@ -1531,6 +1633,23 @@
     "images": {
       "default": "images/default/seven_of_swords.jpg",
       "abstraction": "images/abstraction/seven_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 7",
+        "upright": "배신, 기만, 들키지 않고 넘어가기, 전략적으로 행동하기",
+        "reversed": "가면 증후군, 자기기만, 비밀 지키기"
+      },
+      "ja": {
+        "name": "ソードの7",
+        "upright": "裏切り、欺き、ばれずに済ませること、戦略的に行動すること",
+        "reversed": "インポスター症候群、自己欺瞞、秘密を守ること"
+      },
+      "zh": {
+        "name": "宝剑7",
+        "upright": "背叛、欺骗、蒙混过关、策略性行动",
+        "reversed": "冒名顶替综合症、自我欺骗、保守秘密"
+      }
     }
   },
   {
@@ -1543,6 +1662,23 @@
     "images": {
       "default": "images/default/eight_of_swords.jpg",
       "abstraction": "images/abstraction/eight_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 8",
+        "upright": "부정적인 생각, 스스로 가한 제약, 속박, 피해의식",
+        "reversed": "자기 제한적 신념, 내면의 비판자, 부정적 생각 해소, 새로운 관점에 열려 있음"
+      },
+      "ja": {
+        "name": "ソードの8",
+        "upright": "否定的な考え、自己制限、束縛、被害者意識",
+        "reversed": "自己限定的な信念、内なる批評家、否定的な考えの解放、新しい視点への開放"
+      },
+      "zh": {
+        "name": "宝剑8",
+        "upright": "消极的想法、自我束缚、囚禁、受害者心态",
+        "reversed": "自我限制的信念、内心的批评者、释放消极想法、接纳新视角"
+      }
     }
   },
   {
@@ -1555,6 +1691,23 @@
     "images": {
       "default": "images/default/nine_of_swords.jpg",
       "abstraction": "images/abstraction/nine_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 9",
+        "upright": "불안, 걱정, 두려움, 우울, 악몽",
+        "reversed": "내적 혼란, 뿌리 깊은 두려움, 비밀, 걱정 해소"
+      },
+      "ja": {
+        "name": "ソードの9",
+        "upright": "不安、心配、恐れ、憂鬱、悪夢",
+        "reversed": "内なる混乱、根深い恐れ、秘密、心配の解放"
+      },
+      "zh": {
+        "name": "宝剑9",
+        "upright": "焦虑、担忧、恐惧、抑郁、噩梦",
+        "reversed": "内心的动荡、根深蒂固的恐惧、秘密、释放担忧"
+      }
     }
   },
   {
@@ -1567,6 +1720,23 @@
     "images": {
       "default": "images/default/ten_of_swords.jpg",
       "abstraction": "images/abstraction/ten_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 10",
+        "upright": "고통스러운 끝맺음, 깊은 상처, 배신, 상실, 위기",
+        "reversed": "회복, 재생, 피할 수 없는 끝에 대한 저항"
+      },
+      "ja": {
+        "name": "ソードの10",
+        "upright": "苦痛を伴う終わり、深い傷、裏切り、喪失、危機",
+        "reversed": "回復、再生、避けられない終わりへの抵抗"
+      },
+      "zh": {
+        "name": "宝剑10",
+        "upright": "痛苦的结束、深深的创伤、背叛、失落、危机",
+        "reversed": "恢复、重生、抗拒无法避免的结局"
+      }
     }
   },
   {
@@ -1579,6 +1749,23 @@
     "images": {
       "default": "images/default/page_of_swords.jpg",
       "abstraction": "images/abstraction/page_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 시종",
+        "upright": "새로운 아이디어, 호기심, 지식에 대한 갈증, 새로운 소통 방식",
+        "reversed": "자기표현, 말뿐이고 행동이 없음, 무계획적인 행동, 조급함"
+      },
+      "ja": {
+        "name": "ソードのペイジ",
+        "upright": "新しいアイデア、好奇心、知識への渇望、新しいコミュニケーションの方法",
+        "reversed": "自己表現、口先だけで行動が伴わないこと、無計画な行動、焦り"
+      },
+      "zh": {
+        "name": "宝剑侍从",
+        "upright": "新想法、好奇心、求知欲、新的沟通方式",
+        "reversed": "自我表达、光说不做、草率行事、急躁"
+      }
     }
   },
   {
@@ -1591,6 +1778,23 @@
     "images": {
       "default": "images/default/knight_of_swords.jpg",
       "abstraction": "images/abstraction/knight_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 기사",
+        "upright": "야심적, 행동 지향적, 성공을 향한 추진력, 빠른 사고",
+        "reversed": "안절부절, 집중력 부족, 충동적, 번아웃"
+      },
+      "ja": {
+        "name": "ソードのナイト",
+        "upright": "野心的、行動志向、成功への推進力、素早い思考",
+        "reversed": "落ち着きがない、集中力の欠如、衝動的、燃え尽き"
+      },
+      "zh": {
+        "name": "宝剑骑士",
+        "upright": "野心勃勃、行动导向、渴望成功、思维敏捷",
+        "reversed": "焦躁不安、注意力不集中、冲动、倦怠"
+      }
     }
   },
   {
@@ -1603,6 +1807,23 @@
     "images": {
       "default": "images/default/queen_of_swords.jpg",
       "abstraction": "images/abstraction/queen_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 여왕",
+        "upright": "독립적, 공정한 판단력, 명확한 경계, 직접적인 소통",
+        "reversed": "지나치게 감정적, 쉽게 휘둘림, 신랄함, 냉정함"
+      },
+      "ja": {
+        "name": "ソードのクイーン",
+        "upright": "独立的、公正な判断力、明確な境界線、率直なコミュニケーション",
+        "reversed": "過度に感情的、影響されやすい、辛辣、冷淡"
+      },
+      "zh": {
+        "name": "宝剑王后",
+        "upright": "独立、公正的判断、清晰的界限、直接的沟通",
+        "reversed": "过度情绪化、容易受影响、尖酸刻薄、冷酷无情"
+      }
     }
   },
   {
@@ -1615,6 +1836,23 @@
     "images": {
       "default": "images/default/king_of_swords.jpg",
       "abstraction": "images/abstraction/king_of_swords.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "소드 왕",
+        "upright": "정신적 명료함, 지적인 힘, 권위, 진실",
+        "reversed": "조용한 힘, 내면의 진실, 권력 남용, 조종"
+      },
+      "ja": {
+        "name": "ソードのキング",
+        "upright": "精神的な明晰さ、知的な力、権威、真実",
+        "reversed": "静かな力、内なる真実、権力の乱用、操作"
+      },
+      "zh": {
+        "name": "宝剑国王",
+        "upright": "思维清晰、智慧的力量、权威、真理",
+        "reversed": "沉静的力量、内在的真理、滥用权力、操纵"
+      }
     }
   },
   {
