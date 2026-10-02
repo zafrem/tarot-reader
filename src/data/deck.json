@@ -1053,6 +1053,23 @@
     "images": {
       "default": "images/default/ace_of_cups.jpg",
       "abstraction": "images/abstraction/ace_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 에이스",
+        "upright": "사랑, 새로운 관계, 연민, 창의성",
+        "reversed": "자기 사랑, 직관, 억압된 감정"
+      },
+      "ja": {
+        "name": "カップのエース",
+        "upright": "愛、新しい関係、思いやり、創造性",
+        "reversed": "自己愛、直感、抑圧された感情"
+      },
+      "zh": {
+        "name": "圣杯A",
+        "upright": "爱、新的关系、同情、创造力",
+        "reversed": "自爱、直觉、压抑的情感"
+      }
     }
   },
   {
@@ -1065,6 +1082,23 @@
     "images": {
       "default": "images/default/two_of_cups.jpg",
       "abstraction": "images/abstraction/two_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 2",
+        "upright": "결합된 사랑, 동반자 관계, 상호 매력",
+        "reversed": "자기 사랑, 이별, 불화, 불신"
+      },
+      "ja": {
+        "name": "カップの2",
+        "upright": "結ばれた愛、パートナーシップ、相互の魅力",
+        "reversed": "自己愛、別れ、不和、不信"
+      },
+      "zh": {
+        "name": "圣杯2",
+        "upright": "结合的爱、伙伴关系、相互吸引",
+        "reversed": "自爱、分手、不和、不信任"
+      }
     }
   },
   {
@@ -1077,6 +1111,23 @@
     "images": {
       "default": "images/default/three_of_cups.jpg",
       "abstraction": "images/abstraction/three_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 3",
+        "upright": "축하, 우정, 창의성, 협업",
+        "reversed": "독립, 혼자만의 시간, 격렬한 파티, 불청객이 된 셋째"
+      },
+      "ja": {
+        "name": "カップの3",
+        "upright": "祝福、友情、創造性、協力",
+        "reversed": "独立、一人の時間、激しいパーティー、三人目は邪魔者"
+      },
+      "zh": {
+        "name": "圣杯3",
+        "upright": "庆祝、友谊、创造力、合作",
+        "reversed": "独立、独处时光、纵情派对、多余的第三者"
+      }
     }
   },
   {
@@ -1089,6 +1140,23 @@
     "images": {
       "default": "images/default/four_of_cups.jpg",
       "abstraction": "images/abstraction/four_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 4",
+        "upright": "명상, 숙고, 무관심, 재평가",
+        "reversed": "후퇴, 철수, 답을 찾기 위한 내면 성찰"
+      },
+      "ja": {
+        "name": "カップの4",
+        "upright": "瞑想、熟考、無関心、再評価",
+        "reversed": "引きこもり、撤退、答えを求めて内省すること"
+      },
+      "zh": {
+        "name": "圣杯4",
+        "upright": "冥想、沉思、冷漠、重新评估",
+        "reversed": "退缩、撤离、向内寻求答案"
+      }
     }
   },
   {
@@ -1101,6 +1169,23 @@
     "images": {
       "default": "images/default/five_of_cups.jpg",
       "abstraction": "images/abstraction/five_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 5",
+        "upright": "후회, 실패, 실망, 비관주의",
+        "reversed": "개인적 좌절, 자기 용서, 앞으로 나아가기"
+      },
+      "ja": {
+        "name": "カップの5",
+        "upright": "後悔、失敗、失望、悲観主義",
+        "reversed": "個人的な挫折、自己赦し、前進すること"
+      },
+      "zh": {
+        "name": "圣杯5",
+        "upright": "后悔、失败、失望、悲观",
+        "reversed": "个人挫折、自我宽恕、向前迈进"
+      }
     }
   },
   {
@@ -1113,6 +1198,23 @@
     "images": {
       "default": "images/default/six_of_cups.jpg",
       "abstraction": "images/abstraction/six_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 6",
+        "upright": "과거를 돌아보기, 어린 시절의 추억, 순수함, 기쁨",
+        "reversed": "과거에 머무름, 용서, 장난기 부족"
+      },
+      "ja": {
+        "name": "カップの6",
+        "upright": "過去を振り返ること、子供時代の思い出、無邪気さ、喜び",
+        "reversed": "過去にとらわれること、許し、遊び心の欠如"
+      },
+      "zh": {
+        "name": "圣杯6",
+        "upright": "重温过去、童年回忆、纯真、喜悦",
+        "reversed": "活在过去、宽恕、缺乏童趣"
+      }
     }
   },
   {
@@ -1125,6 +1227,23 @@
     "images": {
       "default": "images/default/seven_of_cups.jpg",
       "abstraction": "images/abstraction/seven_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 7",
+        "upright": "기회, 선택, 희망적 사고, 환상",
+        "reversed": "일치, 개인적 가치관, 선택에 압도됨"
+      },
+      "ja": {
+        "name": "カップの7",
+        "upright": "機会、選択、希望的観測、幻想",
+        "reversed": "一致、個人的な価値観、選択に圧倒されること"
+      },
+      "zh": {
+        "name": "圣杯7",
+        "upright": "机会、选择、一厢情愿、幻想",
+        "reversed": "一致、个人价值观、被选择淹没"
+      }
     }
   },
   {
@@ -1137,6 +1256,23 @@
     "images": {
       "default": "images/default/eight_of_cups.jpg",
       "abstraction": "images/abstraction/eight_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 8",
+        "upright": "실망, 포기, 철수, 현실 도피",
+        "reversed": "한 번 더 시도하기, 우유부단함, 방황"
+      },
+      "ja": {
+        "name": "カップの8",
+        "upright": "失望、放棄、撤退、現実逃避",
+        "reversed": "もう一度挑戦すること、優柔不断、あてもなくさまようこと"
+      },
+      "zh": {
+        "name": "圣杯8",
+        "upright": "失望、放弃、退出、逃避现实",
+        "reversed": "再试一次、犹豫不决、漫无目的地漂泊"
+      }
     }
   },
   {
@@ -1149,6 +1285,23 @@
     "images": {
       "default": "images/default/nine_of_cups.jpg",
       "abstraction": "images/abstraction/nine_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 9",
+        "upright": "만족, 충족감, 감사, 소원 성취",
+        "reversed": "내면의 행복, 물질주의, 불만족, 탐닉"
+      },
+      "ja": {
+        "name": "カップの9",
+        "upright": "満足、充足感、感謝、願いが叶うこと",
+        "reversed": "内なる幸福、物質主義、不満、耽溺"
+      },
+      "zh": {
+        "name": "圣杯9",
+        "upright": "满足、满意、感恩、愿望成真",
+        "reversed": "内在的幸福、物质主义、不满、放纵"
+      }
     }
   },
   {
@@ -1161,6 +1314,23 @@
     "images": {
       "default": "images/default/ten_of_cups.jpg",
       "abstraction": "images/abstraction/ten_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 10",
+        "upright": "신성한 사랑, 행복한 관계, 조화, 일치",
+        "reversed": "단절, 어긋난 가치관, 힘겨운 관계"
+      },
+      "ja": {
+        "name": "カップの10",
+        "upright": "神聖な愛、至福の関係、調和、一致",
+        "reversed": "断絶、価値観のずれ、苦しい関係"
+      },
+      "zh": {
+        "name": "圣杯10",
+        "upright": "神圣的爱、幸福的关系、和谐、一致",
+        "reversed": "断绝联系、价值观错位、关系困难"
+      }
     }
   },
   {
@@ -1173,6 +1343,23 @@
     "images": {
       "default": "images/default/page_of_cups.jpg",
       "abstraction": "images/abstraction/page_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 시종",
+        "upright": "창의적 기회, 직관적 메시지, 호기심, 가능성",
+        "reversed": "새로운 아이디어, 직관에 대한 의심, 창의적 막힘, 정서적 미성숙"
+      },
+      "ja": {
+        "name": "カップのペイジ",
+        "upright": "創造的な機会、直感的なメッセージ、好奇心、可能性",
+        "reversed": "新しいアイデア、直感を疑うこと、創造的な行き詰まり、情緒的な未熟さ"
+      },
+      "zh": {
+        "name": "圣杯侍从",
+        "upright": "创意机会、直觉信息、好奇心、可能性",
+        "reversed": "新想法、怀疑直觉、创意受阻、情感不成熟"
+      }
     }
   },
   {
@@ -1185,6 +1372,23 @@
     "images": {
       "default": "images/default/knight_of_cups.jpg",
       "abstraction": "images/abstraction/knight_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 기사",
+        "upright": "창의성, 로맨스, 메시지를 전하거나 받음, 투자",
+        "reversed": "변덕스러움, 실망, 물러남"
+      },
+      "ja": {
+        "name": "カップのナイト",
+        "upright": "創造性、ロマンス、メッセージを伝える、または受け取ること、投資",
+        "reversed": "気分屋、失望、引きこもること"
+      },
+      "zh": {
+        "name": "圣杯骑士",
+        "upright": "创造力、浪漫、传递或收到消息、投入",
+        "reversed": "情绪化、失望、退缩"
+      }
     }
   },
   {
@@ -1197,6 +1401,23 @@
     "images": {
       "default": "images/default/queen_of_cups.jpg",
       "abstraction": "images/abstraction/queen_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 여왕",
+        "upright": "연민 어린, 배려심 많은, 정서적으로 안정된, 직관적인, 흐름 속에 있는",
+        "reversed": "내면의 연민, 자기 돌봄, 의존성, 자기희생"
+      },
+      "ja": {
+        "name": "カップのクイーン",
+        "upright": "思いやりのある、気遣いのある、情緒的に安定した、直感的な、流れの中にいる",
+        "reversed": "内なる思いやり、セルフケア、共依存、自己犠牲"
+      },
+      "zh": {
+        "name": "圣杯王后",
+        "upright": "富有同情心的、关怀的、情绪稳定的、直觉敏锐的、处于心流状态的",
+        "reversed": "内在的同情心、自我关怀、相互依赖、自我牺牲"
+      }
     }
   },
   {
@@ -1209,6 +1430,23 @@
     "images": {
       "default": "images/default/king_of_cups.jpg",
       "abstraction": "images/abstraction/king_of_cups.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "컵 왕",
+        "upright": "정서적으로 균형 잡힌, 연민 있는, 외교적인",
+        "reversed": "자기 연민, 내면의 감정, 변덕스러움, 정서적 조종"
+      },
+      "ja": {
+        "name": "カップのキング",
+        "upright": "情緒的に安定した、思いやりのある、外交的な",
+        "reversed": "自己への思いやり、内なる感情、気分屋、感情的な操作"
+      },
+      "zh": {
+        "name": "圣杯国王",
+        "upright": "情绪平衡的、富有同情心的、圆融的",
+        "reversed": "自我同情、内心情感、情绪化、情感操控"
+      }
     }
   },
   {
