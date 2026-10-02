@@ -9,6 +9,23 @@
     "images": {
       "default": "images/default/the_fool.jpg",
       "abstraction": "images/abstraction/the_fool.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "바보",
+        "upright": "새로운 시작, 순수함, 자유로운 영혼, 즉흥성",
+        "reversed": "무모함, 방향 상실, 판단력 부족, 어리석음"
+      },
+      "ja": {
+        "name": "愚者",
+        "upright": "新たな始まり、純粋さ、自由な精神、無邪気さ",
+        "reversed": "無謀さ、方向性の喪失、判断力の欠如、愚行"
+      },
+      "zh": {
+        "name": "愚者",
+        "upright": "新的开始、纯真、自由奔放、率性而为",
+        "reversed": "鲁莽、迷失方向、判断失误、愚蠢"
+      }
     }
   },
   {
@@ -21,6 +38,23 @@
     "images": {
       "default": "images/default/the_magician.jpg",
       "abstraction": "images/abstraction/the_magician.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "마법사",
+        "upright": "의지력, 현실화, 수완, 힘",
+        "reversed": "조작, 서투른 계획, 미개발된 재능"
+      },
+      "ja": {
+        "name": "魔術師",
+        "upright": "意志力、実現化、臨機応変さ、力",
+        "reversed": "操作、計画の甘さ、未開発の才能"
+      },
+      "zh": {
+        "name": "魔术师",
+        "upright": "意志力、显化、随机应变、力量",
+        "reversed": "操纵、计划不周、未开发的才能"
+      }
     }
   },
   {
@@ -33,6 +67,23 @@
     "images": {
       "default": "images/default/the_high_priestess.jpg",
       "abstraction": "images/abstraction/the_high_priestess.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "여사제",
+        "upright": "직관, 신성한 지식, 신성한 여성성, 잠재의식",
+        "reversed": "비밀, 직관과의 단절, 위축"
+      },
+      "ja": {
+        "name": "女教皇",
+        "upright": "直感、神聖な知識、神聖な女性性、潜在意識",
+        "reversed": "秘密、直感からの断絶、引きこもり"
+      },
+      "zh": {
+        "name": "女祭司",
+        "upright": "直觉、神圣知识、神圣女性特质、潜意识",
+        "reversed": "秘密、与直觉失联、退缩"
+      }
     }
   },
   {
@@ -45,6 +96,23 @@
     "images": {
       "default": "images/default/the_empress.jpg",
       "abstraction": "images/abstraction/the_empress.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "여황제",
+        "upright": "풍요, 여성성, 아름다움, 자연, 번영",
+        "reversed": "창의력 막힘, 타인에 대한 의존"
+      },
+      "ja": {
+        "name": "女帝",
+        "upright": "豊穣、女性らしさ、美しさ、自然、豊かさ",
+        "reversed": "創造性の停滞、他者への依存"
+      },
+      "zh": {
+        "name": "女皇",
+        "upright": "丰饶、女性特质、美丽、自然、丰盛",
+        "reversed": "创意受阻、依赖他人"
+      }
     }
   },
   {
@@ -57,6 +125,23 @@
     "images": {
       "default": "images/default/the_emperor.jpg",
       "abstraction": "images/abstraction/the_emperor.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "황제",
+        "upright": "권위, 체제, 구조, 아버지 같은 존재",
+        "reversed": "지배, 과도한 통제, 규율 부족"
+      },
+      "ja": {
+        "name": "皇帝",
+        "upright": "権威、体制、構造、父性的存在",
+        "reversed": "支配、過度な統制、規律の欠如"
+      },
+      "zh": {
+        "name": "皇帝",
+        "upright": "权威、体制、结构、父亲形象",
+        "reversed": "支配、过度控制、缺乏自律"
+      }
     }
   },
   {
@@ -69,6 +154,23 @@
     "images": {
       "default": "images/default/the_hierophant.jpg",
       "abstraction": "images/abstraction/the_hierophant.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "교황",
+        "upright": "영적 지혜, 종교적 신념, 순응, 전통",
+        "reversed": "개인적 신념, 자유, 현상에 대한 도전"
+      },
+      "ja": {
+        "name": "法王",
+        "upright": "精神的な知恵、宗教的信念、順応、伝統",
+        "reversed": "個人的信念、自由、現状への挑戦"
+      },
+      "zh": {
+        "name": "教皇",
+        "upright": "精神智慧、宗教信仰、顺从、传统",
+        "reversed": "个人信念、自由、挑战现状"
+      }
     }
   },
   {
@@ -81,6 +183,23 @@
     "images": {
       "default": "images/default/the_lovers.jpg",
       "abstraction": "images/abstraction/the_lovers.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "연인",
+        "upright": "사랑, 조화, 관계, 가치관의 일치",
+        "reversed": "자기애, 부조화, 불균형, 가치관 불일치"
+      },
+      "ja": {
+        "name": "恋人",
+        "upright": "愛、調和、人間関係、価値観の一致",
+        "reversed": "自己愛、不調和、不均衡、価値観の不一致"
+      },
+      "zh": {
+        "name": "恋人",
+        "upright": "爱、和谐、关系、价值观一致",
+        "reversed": "自爱、不和谐、失衡、价值观不一致"
+      }
     }
   },
   {
@@ -93,6 +212,23 @@
     "images": {
       "default": "images/default/the_chariot.jpg",
       "abstraction": "images/abstraction/the_chariot.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "전차",
+        "upright": "통제, 의지력, 성공, 결단력",
+        "reversed": "자기 절제, 반대, 방향 상실"
+      },
+      "ja": {
+        "name": "戦車",
+        "upright": "統制、意志力、成功、決断力",
+        "reversed": "自己鍛錬、対立、方向性の喪失"
+      },
+      "zh": {
+        "name": "战车",
+        "upright": "掌控、意志力、成功、决心",
+        "reversed": "自律、对立、迷失方向"
+      }
     }
   },
   {
@@ -105,6 +241,23 @@
     "images": {
       "default": "images/default/strength.jpg",
       "abstraction": "images/abstraction/strength.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "힘",
+        "upright": "힘, 용기, 설득력, 영향력, 연민",
+        "reversed": "자기 의심, 낮은 에너지, 날것의 감정"
+      },
+      "ja": {
+        "name": "力",
+        "upright": "力、勇気、説得力、影響力、思いやり",
+        "reversed": "自己疑念、低い気力、剥き出しの感情"
+      },
+      "zh": {
+        "name": "力量",
+        "upright": "力量、勇气、说服力、影响力、同情心",
+        "reversed": "自我怀疑、精力不足、原始情绪"
+      }
     }
   },
   {
@@ -117,6 +270,23 @@
     "images": {
       "default": "images/default/the_hermit.jpg",
       "abstraction": "images/abstraction/the_hermit.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "은둔자",
+        "upright": "영혼 탐구, 내적 성찰, 홀로 있음, 내면의 인도",
+        "reversed": "고립, 외로움, 위축"
+      },
+      "ja": {
+        "name": "隠者",
+        "upright": "魂の探求、内省、孤独でいること、内なる導き",
+        "reversed": "孤立、孤独、引きこもり"
+      },
+      "zh": {
+        "name": "隐士",
+        "upright": "灵魂探索、内省、独处、内在指引",
+        "reversed": "孤立、孤独、退缩"
+      }
     }
   },
   {
@@ -129,6 +299,23 @@
     "images": {
       "default": "images/default/wheel_of_fortune.jpg",
       "abstraction": "images/abstraction/wheel_of_fortune.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "운명의 수레바퀴",
+        "upright": "행운, 업보, 삶의 주기, 운명, 전환점",
+        "reversed": "불운, 통제력 상실, 통제에 대한 집착"
+      },
+      "ja": {
+        "name": "運命の輪",
+        "upright": "幸運、カルマ、人生の周期、運命、転機",
+        "reversed": "不運、コントロールの喪失、コントロールへの固執"
+      },
+      "zh": {
+        "name": "命运之轮",
+        "upright": "好运、业力、生命周期、命运、转折点",
+        "reversed": "厄运、失去掌控、执着于控制"
+      }
     }
   },
   {
@@ -141,6 +328,23 @@
     "images": {
       "default": "images/default/justice.jpg",
       "abstraction": "images/abstraction/justice.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "정의",
+        "upright": "정의, 공정함, 진실, 인과응보, 법",
+        "reversed": "불공정, 책임감 결여, 부정직함"
+      },
+      "ja": {
+        "name": "正義",
+        "upright": "正義、公正さ、真実、因果応報、法",
+        "reversed": "不公正、責任感の欠如、不誠実さ"
+      },
+      "zh": {
+        "name": "正义",
+        "upright": "正义、公平、真相、因果、法律",
+        "reversed": "不公、缺乏责任感、不诚实"
+      }
     }
   },
   {
@@ -153,6 +357,23 @@
     "images": {
       "default": "images/default/the_hanged_man.jpg",
       "abstraction": "images/abstraction/the_hanged_man.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "매달린 사람",
+        "upright": "정지, 제약, 내려놓음, 희생",
+        "reversed": "지연, 저항, 정체, 우유부단"
+      },
+      "ja": {
+        "name": "吊られた男",
+        "upright": "停滞、制約、手放すこと、犠牲",
+        "reversed": "遅延、抵抗、停滞、優柔不断"
+      },
+      "zh": {
+        "name": "倒吊人",
+        "upright": "暂停、限制、放手、牺牲",
+        "reversed": "拖延、抗拒、停滞不前、犹豫不决"
+      }
     }
   },
   {
@@ -165,6 +386,23 @@
     "images": {
       "default": "images/default/death.jpg",
       "abstraction": "images/abstraction/death.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "죽음",
+        "upright": "끝맺음, 시작, 변화, 변형, 전환",
+        "reversed": "변화에 대한 저항, 개인적 변화, 내적 정화"
+      },
+      "ja": {
+        "name": "死神",
+        "upright": "終わり、始まり、変化、変容、移行",
+        "reversed": "変化への抵抗、個人的な変容、内なる浄化"
+      },
+      "zh": {
+        "name": "死神",
+        "upright": "结束、开始、变化、蜕变、过渡",
+        "reversed": "抗拒改变、个人蜕变、内在净化"
+      }
     }
   },
   {
@@ -177,6 +415,23 @@
     "images": {
       "default": "images/default/temperance.jpg",
       "abstraction": "images/abstraction/temperance.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "절제",
+        "upright": "균형, 절제, 인내, 목적",
+        "reversed": "불균형, 과잉, 자기 치유, 재정렬"
+      },
+      "ja": {
+        "name": "節制",
+        "upright": "バランス、節度、忍耐、目的",
+        "reversed": "不均衡、過剰、自己治癒、再調整"
+      },
+      "zh": {
+        "name": "节制",
+        "upright": "平衡、节制、耐心、目标",
+        "reversed": "失衡、过度、自我疗愈、重新调整"
+      }
     }
   },
   {
@@ -189,6 +444,23 @@
     "images": {
       "default": "images/default/the_devil.jpg",
       "abstraction": "images/abstraction/the_devil.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "악마",
+        "upright": "속박, 중독, 성적 욕망, 물질주의",
+        "reversed": "제한된 신념 풀어내기, 어두운 생각 탐구, 초연함"
+      },
+      "ja": {
+        "name": "悪魔",
+        "upright": "束縛、依存、性的欲望、物質主義",
+        "reversed": "制限的な信念の解放、暗い思考の探求、離脱"
+      },
+      "zh": {
+        "name": "恶魔",
+        "upright": "束缚、上瘾、性欲、物质主义",
+        "reversed": "释放限制性信念、探索黑暗想法、超然"
+      }
     }
   },
   {
@@ -201,6 +473,23 @@
     "images": {
       "default": "images/default/the_tower.jpg",
       "abstraction": "images/abstraction/the_tower.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "탑",
+        "upright": "갑작스러운 변화, 격변, 혼돈, 계시, 각성",
+        "reversed": "개인적 변화, 변화에 대한 두려움, 재난 회피"
+      },
+      "ja": {
+        "name": "塔",
+        "upright": "突然の変化、激変、混乱、啓示、覚醒",
+        "reversed": "個人的な変容、変化への恐れ、災難の回避"
+      },
+      "zh": {
+        "name": "高塔",
+        "upright": "突如其来的变化、剧变、混乱、启示、觉醒",
+        "reversed": "个人转变、害怕改变、避免灾难"
+      }
     }
   },
   {
@@ -213,6 +502,23 @@
     "images": {
       "default": "images/default/the_star.jpg",
       "abstraction": "images/abstraction/the_star.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "별",
+        "upright": "희망, 믿음, 목적, 쇄신, 영성",
+        "reversed": "믿음 부족, 절망, 자기 신뢰, 단절"
+      },
+      "ja": {
+        "name": "星",
+        "upright": "希望、信仰、目的、再生、精神性",
+        "reversed": "信仰の欠如、絶望、自己信頼、断絶"
+      },
+      "zh": {
+        "name": "星星",
+        "upright": "希望、信念、目标、重生、灵性",
+        "reversed": "缺乏信念、绝望、自我信任、脱节"
+      }
     }
   },
   {
@@ -225,6 +531,23 @@
     "images": {
       "default": "images/default/the_moon.jpg",
       "abstraction": "images/abstraction/the_moon.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "달",
+        "upright": "환상, 두려움, 불안, 잠재의식, 직관",
+        "reversed": "두려움의 해소, 억압된 감정, 내면의 혼란"
+      },
+      "ja": {
+        "name": "月",
+        "upright": "幻想、恐れ、不安、潜在意識、直感",
+        "reversed": "恐れの解放、抑圧された感情、内なる混乱"
+      },
+      "zh": {
+        "name": "月亮",
+        "upright": "幻象、恐惧、焦虑、潜意识、直觉",
+        "reversed": "释放恐惧、压抑的情绪、内心困惑"
+      }
     }
   },
   {
@@ -237,6 +560,23 @@
     "images": {
       "default": "images/default/the_sun.jpg",
       "abstraction": "images/abstraction/the_sun.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "태양",
+        "upright": "긍정, 즐거움, 따뜻함, 성공, 활력",
+        "reversed": "내면 아이, 우울함, 지나친 낙관"
+      },
+      "ja": {
+        "name": "太陽",
+        "upright": "前向きさ、楽しさ、温かさ、成功、活力",
+        "reversed": "インナーチャイルド、落ち込み、楽観的すぎること"
+      },
+      "zh": {
+        "name": "太阳",
+        "upright": "积极、乐趣、温暖、成功、活力",
+        "reversed": "内在小孩、情绪低落、过度乐观"
+      }
     }
   },
   {
@@ -249,6 +589,23 @@
     "images": {
       "default": "images/default/judgement.jpg",
       "abstraction": "images/abstraction/judgement.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "심판",
+        "upright": "심판, 부활, 내면의 부름, 용서",
+        "reversed": "자기 의심, 내면의 비판자, 부름 무시"
+      },
+      "ja": {
+        "name": "審判",
+        "upright": "審判、再生、内なる使命感、許し",
+        "reversed": "自己疑念、内なる批判者、使命を無視すること"
+      },
+      "zh": {
+        "name": "审判",
+        "upright": "审判、重生、内在召唤、宽恕",
+        "reversed": "自我怀疑、内在批评者、忽视召唤"
+      }
     }
   },
   {
@@ -261,6 +618,23 @@
     "images": {
       "default": "images/default/the_world.jpg",
       "abstraction": "images/abstraction/the_world.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "세계",
+        "upright": "완성, 통합, 성취, 여행",
+        "reversed": "개인적 마무리 추구, 성공의 지름길"
+      },
+      "ja": {
+        "name": "世界",
+        "upright": "完成、統合、達成、旅行",
+        "reversed": "個人的な区切りを求めること、成功への近道"
+      },
+      "zh": {
+        "name": "世界",
+        "upright": "完成、整合、成就、旅行",
+        "reversed": "寻求个人的了结、成功的捷径"
+      }
     }
   },
   {
