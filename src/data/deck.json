@@ -647,6 +647,23 @@
     "images": {
       "default": "images/default/ace_of_wands.jpg",
       "abstraction": "images/abstraction/ace_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 에이스",
+        "upright": "영감, 새로운 기회, 성장",
+        "reversed": "싹트는 아이디어, 방향 상실, 산만함"
+      },
+      "ja": {
+        "name": "ワンドのエース",
+        "upright": "インスピレーション、新たな機会、成長",
+        "reversed": "芽生えたアイデア、方向性の欠如、注意散漫"
+      },
+      "zh": {
+        "name": "权杖A",
+        "upright": "灵感、新的机会、成长",
+        "reversed": "萌芽的想法、缺乏方向、分心"
+      }
     }
   },
   {
@@ -659,6 +676,23 @@
     "images": {
       "default": "images/default/two_of_wands.jpg",
       "abstraction": "images/abstraction/two_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 2",
+        "upright": "미래 계획, 의사 결정, 안전지대 벗어나기",
+        "reversed": "미지에 대한 두려움, 계획 부족, 잘못된 결정"
+      },
+      "ja": {
+        "name": "ワンドの2",
+        "upright": "将来の計画、意思決定、コンフォートゾーンから出ること",
+        "reversed": "未知への恐れ、計画の欠如、誤った決断"
+      },
+      "zh": {
+        "name": "权杖2",
+        "upright": "未来规划、做决定、走出舒适圈",
+        "reversed": "对未知的恐惧、缺乏规划、错误的决定"
+      }
     }
   },
   {
@@ -671,6 +705,23 @@
     "images": {
       "default": "images/default/three_of_wands.jpg",
       "abstraction": "images/abstraction/three_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 3",
+        "upright": "확장, 선견지명, 해외 기회",
+        "reversed": "소극적 태도, 선견지명 부족, 예상치 못한 지연"
+      },
+      "ja": {
+        "name": "ワンドの3",
+        "upright": "拡大、先見の明、海外での機会",
+        "reversed": "消極的な態度、先見の明の欠如、予期せぬ遅延"
+      },
+      "zh": {
+        "name": "权杖3",
+        "upright": "扩展、远见、海外机遇",
+        "reversed": "畏缩不前、缺乏远见、意外的延误"
+      }
     }
   },
   {
@@ -683,6 +734,23 @@
     "images": {
       "default": "images/default/four_of_wands.jpg",
       "abstraction": "images/abstraction/four_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 4",
+        "upright": "축하, 기쁨, 조화, 휴식, 귀향",
+        "reversed": "개인적인 축하, 내면의 조화, 타인과의 갈등"
+      },
+      "ja": {
+        "name": "ワンドの4",
+        "upright": "祝福、喜び、調和、くつろぎ、帰郷",
+        "reversed": "個人的な祝福、内なる調和、他者との対立"
+      },
+      "zh": {
+        "name": "权杖4",
+        "upright": "庆祝、喜悦、和谐、放松、归乡",
+        "reversed": "个人的庆祝、内在和谐、与他人的冲突"
+      }
     }
   },
   {
@@ -695,6 +763,23 @@
     "images": {
       "default": "images/default/five_of_wands.jpg",
       "abstraction": "images/abstraction/five_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 5",
+        "upright": "갈등, 의견 충돌, 경쟁, 긴장",
+        "reversed": "내적 갈등, 갈등 회피, 긴장 해소"
+      },
+      "ja": {
+        "name": "ワンドの5",
+        "upright": "対立、意見の相違、競争、緊張",
+        "reversed": "内なる葛藤、対立の回避、緊張の緩和"
+      },
+      "zh": {
+        "name": "权杖5",
+        "upright": "冲突、分歧、竞争、紧张",
+        "reversed": "内心的冲突、回避冲突、紧张缓解"
+      }
     }
   },
   {
@@ -707,6 +792,23 @@
     "images": {
       "default": "images/default/six_of_wands.jpg",
       "abstraction": "images/abstraction/six_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 6",
+        "upright": "성공, 대중의 인정, 발전, 자신감",
+        "reversed": "개인적인 성취, 스스로 정의한 성공, 명예 실추"
+      },
+      "ja": {
+        "name": "ワンドの6",
+        "upright": "成功、公の評価、前進、自信",
+        "reversed": "個人的な達成、自分なりの成功の定義、信用の失墜"
+      },
+      "zh": {
+        "name": "权杖6",
+        "upright": "成功、公众认可、进步、自信",
+        "reversed": "私下的成就、个人定义的成功、名誉扫地"
+      }
     }
   },
   {
@@ -719,6 +821,23 @@
     "images": {
       "default": "images/default/seven_of_wands.jpg",
       "abstraction": "images/abstraction/seven_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 7",
+        "upright": "도전, 경쟁, 보호, 인내",
+        "reversed": "탈진, 포기, 압도됨"
+      },
+      "ja": {
+        "name": "ワンドの7",
+        "upright": "挑戦、競争、防御、忍耐",
+        "reversed": "疲労困憊、諦め、圧倒される"
+      },
+      "zh": {
+        "name": "权杖7",
+        "upright": "挑战、竞争、保护、坚持",
+        "reversed": "精疲力竭、放弃、不堪重负"
+      }
     }
   },
   {
@@ -731,6 +850,23 @@
     "images": {
       "default": "images/default/eight_of_wands.jpg",
       "abstraction": "images/abstraction/eight_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 8",
+        "upright": "신속함, 속도, 진전, 움직임, 빠른 결정",
+        "reversed": "지연, 좌절, 변화에 대한 저항, 내적 정렬"
+      },
+      "ja": {
+        "name": "ワンドの8",
+        "upright": "迅速さ、スピード、進展、動き、素早い決断",
+        "reversed": "遅延、苛立ち、変化への抵抗、内面の調整"
+      },
+      "zh": {
+        "name": "权杖8",
+        "upright": "迅速、速度、进展、行动、快速决策",
+        "reversed": "延误、挫折、抵制变化、内在调整"
+      }
     }
   },
   {
@@ -743,6 +879,23 @@
     "images": {
       "default": "images/default/nine_of_wands.jpg",
       "abstraction": "images/abstraction/nine_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 9",
+        "upright": "회복력, 용기, 끈기, 믿음의 시험, 경계 설정",
+        "reversed": "내면의 자원, 고군분투, 압도됨, 방어적 태도, 피해의식"
+      },
+      "ja": {
+        "name": "ワンドの9",
+        "upright": "回復力、勇気、粘り強さ、信念の試練、境界線",
+        "reversed": "内なる資質、苦闘、圧倒される、防御的、猜疑心"
+      },
+      "zh": {
+        "name": "权杖9",
+        "upright": "韧性、勇气、坚持、信念的考验、界限",
+        "reversed": "内在资源、挣扎、不堪重负、防御心理、多疑"
+      }
     }
   },
   {
@@ -755,6 +908,23 @@
     "images": {
       "default": "images/default/ten_of_wands.jpg",
       "abstraction": "images/abstraction/ten_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 10",
+        "upright": "부담, 추가적인 책임, 고된 노력, 완성",
+        "reversed": "모든 것을 떠안음, 짐을 짊어짐, 위임, 내려놓음"
+      },
+      "ja": {
+        "name": "ワンドの10",
+        "upright": "重荷、追加の責任、骨折り、完成",
+        "reversed": "すべてを一人で抱え込む、重荷を背負う、委任、手放すこと"
+      },
+      "zh": {
+        "name": "权杖10",
+        "upright": "重担、额外的责任、辛勤努力、完成",
+        "reversed": "一手包办、背负重担、委派、释放"
+      }
     }
   },
   {
@@ -767,6 +937,23 @@
     "images": {
       "default": "images/default/page_of_wands.jpg",
       "abstraction": "images/abstraction/page_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 시종",
+        "upright": "영감, 아이디어, 발견, 무한한 가능성, 자유로운 영혼",
+        "reversed": "막 생겨난 아이디어, 에너지 재조정, 자기 제한적 믿음"
+      },
+      "ja": {
+        "name": "ワンドのペイジ",
+        "upright": "インスピレーション、アイデア、発見、無限の可能性、自由な精神",
+        "reversed": "生まれたばかりのアイデア、エネルギーの方向転換、自己制限的な思い込み"
+      },
+      "zh": {
+        "name": "权杖侍从",
+        "upright": "灵感、想法、发现、无限潜力、自由的灵魂",
+        "reversed": "刚萌生的想法、重新调整精力、自我设限的信念"
+      }
     }
   },
   {
@@ -779,6 +966,23 @@
     "images": {
       "default": "images/default/knight_of_wands.jpg",
       "abstraction": "images/abstraction/knight_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 기사",
+        "upright": "에너지, 열정, 영감 받은 행동, 모험, 충동성",
+        "reversed": "열정 프로젝트, 성급함, 흩어진 에너지, 지연, 좌절"
+      },
+      "ja": {
+        "name": "ワンドのナイト",
+        "upright": "エネルギー、情熱、閃いた行動、冒険、衝動性",
+        "reversed": "情熱のプロジェクト、性急さ、散漫なエネルギー、遅延、苛立ち"
+      },
+      "zh": {
+        "name": "权杖骑士",
+        "upright": "能量、热情、受启发的行动、冒险、冲动",
+        "reversed": "热情项目、仓促、精力分散、延误、挫折"
+      }
     }
   },
   {
@@ -791,6 +995,23 @@
     "images": {
       "default": "images/default/queen_of_wands.jpg",
       "abstraction": "images/abstraction/queen_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 여왕",
+        "upright": "용기, 자신감, 독립심, 사교적인 성격, 결단력",
+        "reversed": "자기 존중, 자기 확신, 내향적, 자아 정체성 재확립"
+      },
+      "ja": {
+        "name": "ワンドのクイーン",
+        "upright": "勇気、自信、自立心、社交的な性格、決断力",
+        "reversed": "自己尊重、自己確信、内向的、自己認識の再確立"
+      },
+      "zh": {
+        "name": "权杖王后",
+        "upright": "勇气、自信、独立、善于社交、决心",
+        "reversed": "自尊、自信、内向、重新确立自我"
+      }
     }
   },
   {
@@ -803,6 +1024,23 @@
     "images": {
       "default": "images/default/king_of_wands.jpg",
       "abstraction": "images/abstraction/king_of_wands.svg"
+    },
+    "translations": {
+      "ko": {
+        "name": "완드 왕",
+        "upright": "타고난 리더, 비전, 기업가 정신, 명예",
+        "reversed": "충동성, 성급함, 무자비함, 높은 기대치"
+      },
+      "ja": {
+        "name": "ワンドのキング",
+        "upright": "生まれながらのリーダー、ビジョン、起業家精神、名誉",
+        "reversed": "衝動性、性急さ、冷酷さ、高すぎる期待"
+      },
+      "zh": {
+        "name": "权杖国王",
+        "upright": "天生的领导者、远见、创业精神、荣誉",
+        "reversed": "冲动、仓促、无情、过高的期望"
+      }
     }
   },
   {
